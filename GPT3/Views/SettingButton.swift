@@ -13,7 +13,6 @@ struct SettingButton {
     
     @ObservableState
     struct State: Equatable {
-//        var cross: UIImage
     }
     
     enum Action {

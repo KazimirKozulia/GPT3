@@ -7,7 +7,6 @@
 
 import SwiftUI
 import ComposableArchitecture
-//import SwiftSyntax
 
 @Reducer
 struct Main {
@@ -15,12 +14,12 @@ struct Main {
     @ObservableState
     struct State: Equatable {
         var settingButton = SettingButton.State()
-        var scrollButtons = ScrollButtons.State(topButtonsText: Text("Tell me a"),  buttonsText: Text("joke"))/*: [ScrollButtons.State] = [ScrollButtons.State(topButtonsText: Text("Tell me a"),  buttonsText: Text("joke")), ScrollButtons.State(topButtonsText: Text("Give me"), buttonsText: Text("recipe")), ScrollButtons.State(topButtonsText: Text("Write a"), buttonsText: Text("code"))]*/
+        var scrollButtons: [ScrollButtons.State] = [ScrollButtons.State(topButtonsText: Text("Tell me a"),  buttonsText: Text("joke")), ScrollButtons.State(topButtonsText: Text("Give me"), buttonsText: Text("recipe")), ScrollButtons.State(topButtonsText: Text("Write a"), buttonsText: Text("code")), ScrollButtons.State(topButtonsText: Text("Write a"),  buttonsText: Text("song")), ScrollButtons.State(topButtonsText: Text("Write me an"),  buttonsText: Text("Email")), ScrollButtons.State(topButtonsText: Text("Summarize"),  buttonsText: Text("text")), ScrollButtons.State(topButtonsText: Text("Write a"),  buttonsText: Text("Poem")), ScrollButtons.State(topButtonsText: Text("Write me an"),  buttonsText: Text("Essay")), ScrollButtons.State(topButtonsText: Text("Science"),  buttonsText: Text("Question"))]
     }
     
     enum Action {
         case settingButtonTapped(SettingButton.Action)
-        case scrollButtonsTapped(ScrollButtons.Action)
+        case scrollButtonsTapped(id: UUID, action: ScrollButtons.Action)
         case onAppear(ScrollButtons.Action)
     }
     
@@ -29,7 +28,7 @@ struct Main {
             switch action {
             case .settingButtonTapped:
                 return .none
-            case .scrollButtonsTapped(_):
+            case .scrollButtonsTapped:
                 return       .none
             case .onAppear:
                 return .none
@@ -67,12 +66,12 @@ struct MainScreen: View {
             
             ScrollView(.horizontal){
                 HStack{
-                    ScrollButtonsView(store: store.scope(state: \.scrollButtons, action: \.scrollButtonsTapped ))
-                    
-                    //                    ForEach(store.scrollButtons, id: \.self){ _ in
-                    //
-                    //                    }
-                    //                    ForEach<[ScrollButtons.State], ID, Any>(store.scrollButtons, content: )
+                    ForEach(store.state.scrollButtons.indices, id: \.self) { index in
+                        ScrollButtonsView(
+                            store: store.scope(
+                                state: { $0.scrollButtons[index]},
+                                action: { .scrollButtonsTapped(id: UUID(), action: $0)}))
+                    }
                 }                .padding(.horizontal, 20)
                 
                 

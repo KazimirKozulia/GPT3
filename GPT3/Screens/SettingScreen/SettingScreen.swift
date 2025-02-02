@@ -78,7 +78,6 @@ struct SettingScreen: View {
                     Image(.aiHead)
                         .resizable()
                         .padding(.trailing, 20)
-                    //                        .aspectRatio(contentMode: .fit)
                         .frame(width: 170, height: 150)
                 }
                 

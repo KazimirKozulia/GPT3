@@ -53,50 +53,7 @@ struct ScrollButtonsView: View {
             //                    Capsule(style: .continuous)
             //                        .stroke(Color.white, style: StrokeStyle(lineWidth: 1))
             //                )
-                        
-            //                .cornerRadius(20)
-            //                .border(Color.white, width: 1)
-                
-
-
-
-
-
         })
-        
-        
     }
 }
 
-//struct ListScrollButtonsView {
-//    var a: [ScrollButtons.State] = [ScrollButtons.State(topButtonsText: Text("Tell me a"),  buttonsText: Text("joke")), ScrollButtons.State(topButtonsText: Text("Give me"), buttonsText: Text("recipe")), ScrollButtons.State(topButtonsText: Text("Write a"), buttonsText: Text("code"))]
-//    
-//}
-
-//@Reducer
-//struct ListScrollButtons {
-//    
-//    @ObservableState
-//    struct State: Equatable {
-//        var firstButton = ScrollButtons.State(topButtonsText: "faf", buttonsText: "rwr")
-//        var secondButton = ScrollButtons.State(topButtonsText: "kxnv", buttonsText: "akwdnwka")
-//        var thirdButton = ScrollButtons.State(topButtonsText: "iAEWJdkndklwa", buttonsText: "oeafoajfajnf")
-//    }
-//    
-//    enum Action {
-//        case buttonTapped
-//    }
-//    
-//    var body: some ReducerOf<ListScrollButtons> {
-//        Reduce { state, action in
-//            switch action {
-//            case .buttonTapped:
-//            return .none
-//            }
-//        }
-//    }
-//}
-//
-//struct ListScrollButtonsView {
-//    let store: StoreOf<ListScrollButtons>
-//}

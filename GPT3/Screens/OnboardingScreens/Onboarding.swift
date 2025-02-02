@@ -73,9 +73,7 @@ struct Onboarding {
         Reduce { state, action in
             switch action {
             case .buttonTapped(.buttonTapped):
-                return .send(.buttonTapped(.updateLoadingState(true))) /*обрабатываем экшен buttonTapped и внутри него экшен buttonTapped (из MainButton)
-                               отправить экшн на updateLoadingState и перезаписать на тру                                         */
-                
+                return .send(.buttonTapped(.updateLoadingState(true)))
             case .buttonTapped:
                 return .none
             case .bottomButtonsTapped:
@@ -91,27 +89,15 @@ struct Onboarding {
                 case .fourth:
                     state.continueButton = MainButton.State(buttonText: "finish")
                 }
-//                state.continueButton?.isLoading
                 return .none
             }
         }
         .ifLet(\.continueButton, action: \.buttonTapped) {
-            MainButton() //Это Редьюс, для обработки кнопки. Развернуть опционал, создать MainButton()
+            MainButton()
         }
-//        Scope(state: \.backCrossButton, action: \.backButtonTapped) {
-//            BackCrossButton() // Тоже редьюс но еще раз уточнить
-//        }
     }
     
 }
-
-/*
- send - отправить экшн
- run - запустить задачу
- concatenate - последовательно
- merch -одновременно
- */
-
 
 struct OnboardingScreens: View {
     let store: StoreOf<Onboarding>
@@ -165,7 +151,7 @@ struct OnboardingScreens: View {
 #Preview {
     OnboardingScreens(
         store: StoreOf<Onboarding>(
-            initialState: Onboarding.State(myType: .first),
+            initialState: Onboarding.State(myType: .second),
             reducer: { Onboarding() }
         )
     )

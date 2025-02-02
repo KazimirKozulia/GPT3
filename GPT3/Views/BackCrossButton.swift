@@ -13,7 +13,6 @@ struct BackCrossButton {
     
     @ObservableState
     struct State: Equatable {
-//        var cross: UIImage
     }
     
     enum Action {

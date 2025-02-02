@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33034FF32D4D409A007BAA25 /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33034FF22D4D408C007BAA25 /* ChatScreen.swift */; };
 		337B44CC2D41564600B06836 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337B44BC2D41564600B06836 /* Preview Assets.xcassets */; };
 		337B44CD2D41564600B06836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337B44BE2D41564600B06836 /* Assets.xcassets */; };
 		337B44CF2D41564600B06836 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B44BF2D41564600B06836 /* ContentView.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33034FF22D4D408C007BAA25 /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
 		337B43FD2D3BD4F700B06836 /* GPT3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPT3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		337B440D2D3BD4F800B06836 /* GPT3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPT3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		337B44172D3BD4F800B06836 /* GPT3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPT3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33034FF12D4D407F007BAA25 /* ChatScreen */ = {
+			isa = PBXGroup;
+			children = (
+				33034FF22D4D408C007BAA25 /* ChatScreen.swift */,
+			);
+			path = ChatScreen;
+			sourceTree = "<group>";
+		};
 		337B43F42D3BD4F700B06836 = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +224,7 @@
 		33C1D96E2D467CFA00D5D99C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				33034FF12D4D407F007BAA25 /* ChatScreen */,
 				33C1D96D2D467CE200D5D99C /* SettingScreen */,
 				33C1D96B2D467CC000D5D99C /* MainScreen */,
 				33A11CB32D439E930009A287 /* PaywallScreens */,
@@ -376,6 +387,7 @@
 				337B44D22D41564600B06836 /* MainScreen.swift in Sources */,
 				33A11CB02D4261300009A287 /* BottomButtons.swift in Sources */,
 				33A11CAC2D425CE70009A287 /* BackCrossButton.swift in Sources */,
+				33034FF32D4D409A007BAA25 /* ChatScreen.swift in Sources */,
 				33C1D9722D46971D00D5D99C /* SettingBottomButtons.swift in Sources */,
 				337B44DD2D41567700B06836 /* MainButton.swift in Sources */,
 				33C1D9662D46717700D5D99C /* SettingScreen.swift in Sources */,

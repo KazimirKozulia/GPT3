@@ -14,13 +14,13 @@ struct MainButton {
     @ObservableState
     struct State: Equatable {
         var buttonText: String
-        var isLoading: Bool = false // Добавить проперти с булевым значением
+        var isLoading: Bool = false
         
     }
     
     enum Action {
         case buttonTapped
-        case updateLoadingState(Bool) // Добавить Action, который примет переменную bool (для последующего изменения значения переменной isLoading)
+        case updateLoadingState(Bool)
     }
     
     var body: some ReducerOf<MainButton> {
@@ -28,8 +28,8 @@ struct MainButton {
             switch action {
             case .buttonTapped:
             return .none
-            case let .updateLoadingState(loading): // Записать в фукцию reduce обработку экшена updateLoadingState, для записи в нее константы loading
-                state.isLoading = loading // обращение к State и записи новой константы в переменную isLoading
+            case let .updateLoadingState(loading):
+                state.isLoading = loading
             return .none
             }
         }
@@ -40,9 +40,9 @@ struct MainButtonView: View {
     let store: StoreOf<MainButton>
     var body: some View {
             Button(action:{
-                store.send(.buttonTapped) // При нажатии на кнопку отправить экшен
+                store.send(.buttonTapped) 
             }, label:{
-                if store.isLoading { //Если isLoading - тру, вызвать ProgressView()(Иконка загрузки, если фолс, то все после else)
+                if store.isLoading {
                     ProgressView()
                 } else {
                     Text(store.buttonText)
