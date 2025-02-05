@@ -14,25 +14,42 @@ struct Main {
     @ObservableState
     struct State: Equatable {
         var settingButton = SettingButton.State()
-        var scrollButtons: [ScrollButtons.State] = [ScrollButtons.State(topButtonsText: Text("Tell me a"),  buttonsText: Text("joke")), ScrollButtons.State(topButtonsText: Text("Give me"), buttonsText: Text("recipe")), ScrollButtons.State(topButtonsText: Text("Write a"), buttonsText: Text("code")), ScrollButtons.State(topButtonsText: Text("Write a"),  buttonsText: Text("song")), ScrollButtons.State(topButtonsText: Text("Write me an"),  buttonsText: Text("Email")), ScrollButtons.State(topButtonsText: Text("Summarize"),  buttonsText: Text("text")), ScrollButtons.State(topButtonsText: Text("Write a"),  buttonsText: Text("Poem")), ScrollButtons.State(topButtonsText: Text("Write me an"),  buttonsText: Text("Essay")), ScrollButtons.State(topButtonsText: Text("Science"),  buttonsText: Text("Question"))]
+        var scrollButtons: IdentifiedArrayOf<ScrollButtons.State> = []
     }
     
     enum Action {
-        case settingButtonTapped(SettingButton.Action)
-        case scrollButtonsTapped(id: UUID, action: ScrollButtons.Action)
-        case onAppear(ScrollButtons.Action)
+        case settingButton(SettingButton.Action)
+        case scrollButtons(IdentifiedActionOf<ScrollButtons>)
+        case onAppear
     }
     
     var body: some ReducerOf<Main> {
         Reduce { state, action in
             switch action {
-            case .settingButtonTapped:
+            case .settingButton:
                 return .none
-            case .scrollButtonsTapped:
-                return       .none
+            case .scrollButtons:
+                return .none
             case .onAppear:
+                let buttons = [
+                    ("Tell me a", "joke"),
+                    ("Give me", "recipe"),
+                    ("Write a", "code"),
+                    ("Write a", "song"),
+                    ("Write me an", "Email"),
+                    ("Summarize", "text"),
+                    ("Write a", "Poem"),
+                    ("Write me an", "Essay"),
+                    ("Science", "Question")
+                ]
+                state.scrollButtons = IdentifiedArray(uniqueElements: buttons.map{
+                    ScrollButtons.State(id: UUID(), topButtonsText: Text($0.0), buttonsText: Text($0.1))
+                })
                 return .none
             }
+        }
+        .forEach(\.scrollButtons, action: \.scrollButtons) {
+            ScrollButtons()
         }
     }
 }
@@ -42,7 +59,7 @@ struct MainScreen: View {
     var body: some View {
         VStack{
             HStack{
-                SettingButtonView(store: store.scope(state: \.settingButton, action: \.settingButtonTapped ))
+                SettingButtonView(store: store.scope(state: \.settingButton, action: \.settingButton))
                 
                 Spacer()
                 
@@ -51,11 +68,11 @@ struct MainScreen: View {
                 
                 Spacer()
                 
-                Button(action:{
+                Button{
                     
-                }, label: {
+                } label: {
                     Image(.saleIcon)
-                })
+                }
                 
             } .padding(.horizontal, 20)
             
@@ -66,11 +83,8 @@ struct MainScreen: View {
             
             ScrollView(.horizontal){
                 HStack{
-                    ForEach(store.state.scrollButtons.indices, id: \.self) { index in
-                        ScrollButtonsView(
-                            store: store.scope(
-                                state: { $0.scrollButtons[index]},
-                                action: { .scrollButtonsTapped(id: UUID(), action: $0)}))
+                    ForEach(store.scope(state:\.scrollButtons, action:\.scrollButtons)){ childStore in
+                        ScrollButtonsView(store: childStore)
                     }
                 }                .padding(.horizontal, 20)
                 
@@ -83,7 +97,10 @@ struct MainScreen: View {
             
             Spacer()
             
-        }  .containerRelativeFrame([.horizontal, .vertical])
+        } .onAppear {
+            store.send(.onAppear)
+        }
+        .containerRelativeFrame([.horizontal, .vertical])
             .background(.mainBackground)
     }
 }

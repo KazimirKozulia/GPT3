@@ -25,7 +25,7 @@ struct Chat {
     }
     
     enum Action {
-        case settingButtonTapped(SettingButton.Action)
+        case settingButton(SettingButton.Action)
         case newMessageTextChanged(String)
         case sendMessage
         case messageReceived(Message)
@@ -34,7 +34,7 @@ struct Chat {
     var body: some ReducerOf<Chat> {
         Reduce{ state, action in
             switch action {
-            case .settingButtonTapped:
+            case .settingButton:
                 return .none
             case let .newMessageTextChanged(text):
                 state.newMessageText = text
@@ -62,7 +62,7 @@ struct ChatScreen: View {
         WithViewStore(self.store, observe: { $0 }){viewStore in
             VStack{
                 HStack{
-                    SettingButtonView(store: store.scope(state: \.settingButton, action: \.settingButtonTapped ))
+                    SettingButtonView(store: store.scope(state: \.settingButton, action: \.settingButton))
                     
                     Spacer()
                     
@@ -71,11 +71,11 @@ struct ChatScreen: View {
                     
                     Spacer()
                     
-                    Button(action:{
+                    Button{
                         
-                    }, label: {
+                    } label: {
                         Image(.saleIcon)
-                    })
+                    }
                     
                 } .padding(.horizontal, 20)
                 
@@ -112,9 +112,9 @@ struct ChatScreen: View {
                     ))
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     
-                    Button(action: {
+                    Button{
                         store.send(.sendMessage)
-                    }) {
+                    } label: {
                         Image(systemName: "paperplane.fill")
                             .foregroundColor(.blue)
                     }

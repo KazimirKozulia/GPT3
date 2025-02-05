@@ -1,5 +1,5 @@
 //
-//  SettingButton.swift
+//  BackSettingButton.swift
 //  GPT3
 //
 //  Created by Kazimir Kozulia on 26.01.2025.
@@ -9,7 +9,7 @@ import SwiftUI
 import ComposableArchitecture
 
 @Reducer
-struct SettingButton {
+struct BackSettingButton {
     
     @ObservableState
     struct State: Equatable {
@@ -19,7 +19,7 @@ struct SettingButton {
         case buttonTapped
     }
     
-    var body: some ReducerOf<SettingButton> {
+    var body: some ReducerOf<BackSettingButton> {
         Reduce { state, action in
             switch action {
             case .buttonTapped:
@@ -29,14 +29,14 @@ struct SettingButton {
     }
 }
 
-struct SettingButtonView: View {
-    let store: StoreOf<SettingButton>
+struct BackSettingButtonView: View {
+    let store: StoreOf<BackSettingButton>
     var body: some View {
-        Button(action:{
+        Button{
             
-        }, label:{
-            Image(.settingGear)
+        } label:{
+            Image(.backSetting)
             
-        })
+        }
     }
 }

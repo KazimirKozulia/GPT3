@@ -11,7 +11,6 @@
 		337B44CC2D41564600B06836 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337B44BC2D41564600B06836 /* Preview Assets.xcassets */; };
 		337B44CD2D41564600B06836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337B44BE2D41564600B06836 /* Assets.xcassets */; };
 		337B44CF2D41564600B06836 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B44BF2D41564600B06836 /* ContentView.swift */; };
-		337B44D02D41564600B06836 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B44C02D41564600B06836 /* Extension.swift */; };
 		337B44D12D41564600B06836 /* GPT3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B44C12D41564600B06836 /* GPT3App.swift */; };
 		337B44D22D41564600B06836 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B44C32D41564600B06836 /* MainScreen.swift */; };
 		337B44D72D41564600B06836 /* PaywallFullAccessScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B44C82D41564600B06836 /* PaywallFullAccessScreen.swift */; };
@@ -55,7 +54,6 @@
 		337B44BC2D41564600B06836 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		337B44BE2D41564600B06836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		337B44BF2D41564600B06836 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		337B44C02D41564600B06836 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		337B44C12D41564600B06836 /* GPT3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT3App.swift; sourceTree = "<group>"; };
 		337B44C22D41564600B06836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		337B44C32D41564600B06836 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
@@ -158,7 +156,6 @@
 				337B44BD2D41564600B06836 /* Preview Content */,
 				337B44BE2D41564600B06836 /* Assets.xcassets */,
 				337B44BF2D41564600B06836 /* ContentView.swift */,
-				337B44C02D41564600B06836 /* Extension.swift */,
 				337B44C12D41564600B06836 /* GPT3App.swift */,
 				337B44C22D41564600B06836 /* Info.plist */,
 			);
@@ -168,14 +165,7 @@
 		337B44DA2D41564A00B06836 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				33C1D9712D46970300D5D99C /* SettingBottomButtons.swift */,
-				33C1D96F2D4691ED00D5D99C /* SettingChatButton.swift */,
-				33C1D9692D46755000D5D99C /* BackSettingButton.swift */,
-				33C1D9672D46720800D5D99C /* ScrollButtons.swift */,
-				33C1D9632D466C2500D5D99C /* SettingButton.swift */,
-				33A11CAF2D4261180009A287 /* BottomButtons.swift */,
-				33A11CAB2D425CD70009A287 /* BackCrossButton.swift */,
-				337B44DC2D41566900B06836 /* MainButton.swift */,
+				33D599C72D50F756001CF328 /* Buttons */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,6 +221,21 @@
 				33A11CB22D439E740009A287 /* OnboardingScreens */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		33D599C72D50F756001CF328 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				337B44DC2D41566900B06836 /* MainButton.swift */,
+				33C1D9712D46970300D5D99C /* SettingBottomButtons.swift */,
+				33C1D96F2D4691ED00D5D99C /* SettingChatButton.swift */,
+				33C1D9692D46755000D5D99C /* BackSettingButton.swift */,
+				33C1D9672D46720800D5D99C /* ScrollButtons.swift */,
+				33C1D9632D466C2500D5D99C /* SettingButton.swift */,
+				33A11CAF2D4261180009A287 /* BottomButtons.swift */,
+				33A11CAB2D425CD70009A287 /* BackCrossButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,7 +387,6 @@
 			files = (
 				337B44CF2D41564600B06836 /* ContentView.swift in Sources */,
 				33C1D96A2D4675B300D5D99C /* BackSettingButton.swift in Sources */,
-				337B44D02D41564600B06836 /* Extension.swift in Sources */,
 				337B44D12D41564600B06836 /* GPT3App.swift in Sources */,
 				337B44D22D41564600B06836 /* MainScreen.swift in Sources */,
 				33A11CB02D4261300009A287 /* BottomButtons.swift in Sources */,

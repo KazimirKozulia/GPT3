@@ -13,6 +13,7 @@ struct SettingChatButton {
     
     @ObservableState
     struct State: Equatable {
+        var buttonsText: String
     }
     
     enum Action {
@@ -33,32 +34,16 @@ struct SettingChatButtonView: View {
     let store: StoreOf<SettingChatButton>
     var body: some View {
         VStack {
-            Button(action:{
+            Button{
                 
-            }, label:{
-                Text("NEW CHAT")
+            } label:{
+                Text(store.buttonsText)
                     .frame(minWidth: 0, maxWidth: 300)
                     .padding()
                     .background(Color.indigo)
                     .foregroundStyle(Color.white)
                     .cornerRadius(20)
                     .shadow(color: .gray, radius: 5.0, x:0, y:5)
-            })
-            ZStack(alignment: .trailing){
-                Button(action:{
-                    
-                }, label:{
-                    Text("CHAT HISTORY")
-                        .frame(minWidth: 0, maxWidth: 300)
-                        .padding()
-                        .background(Color.indigo)
-                        .foregroundStyle(Color.white)
-                        .cornerRadius(20)
-                        .shadow(color: .gray, radius: 5.0, x:0, y:5)
-                    
-                })
-                Image(.vector)
-                    .padding(.horizontal, 20)
             }
         }
     }

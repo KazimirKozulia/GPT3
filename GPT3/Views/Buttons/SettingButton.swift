@@ -1,15 +1,15 @@
 //
-//  BackCrossButton.swift
+//  SettingButton.swift
 //  GPT3
 //
-//  Created by Kazimir Kozulia on 23.01.2025.
+//  Created by Kazimir Kozulia on 26.01.2025.
 //
 
 import SwiftUI
 import ComposableArchitecture
 
 @Reducer
-struct BackCrossButton {
+struct SettingButton {
     
     @ObservableState
     struct State: Equatable {
@@ -19,7 +19,7 @@ struct BackCrossButton {
         case buttonTapped
     }
     
-    var body: some ReducerOf<BackCrossButton> {
+    var body: some ReducerOf<SettingButton> {
         Reduce { state, action in
             switch action {
             case .buttonTapped:
@@ -29,14 +29,14 @@ struct BackCrossButton {
     }
 }
 
-struct BackCrossButtonView: View {
-    let store: StoreOf<BackCrossButton>
+struct SettingButtonView: View {
+    let store: StoreOf<SettingButton>
     var body: some View {
-        Button(action:{
-            store.send(.buttonTapped)
-        }, label:{
-            Image(.cross)
+        Button{
             
-        })
+        } label:{
+            Image(.settingGear)
+            
+        }
     }
 }

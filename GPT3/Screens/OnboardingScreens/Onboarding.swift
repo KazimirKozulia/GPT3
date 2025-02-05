@@ -20,7 +20,7 @@ struct Onboarding {
     @ObservableState
     struct State: Equatable {
         let myType: OnboardingType
-        var continueButton : MainButton.State?
+        var continueButton = MainButton.State(buttonText: "CONTINUE")
         var bottomButtons = BottomButtons.State()
         var backCrossButton = BackCrossButton.State()
         
@@ -60,44 +60,45 @@ struct Onboarding {
                 UIImage(resource:.uploadingFiles)
             }
         }
+        
+        //        @Shared(.generalPaywall) var generalPaywall = GeneralPaywall(data: [:])
     }
     
     enum Action {
-        case buttonTapped(MainButton.Action)
-        case bottomButtonsTapped(BottomButtons.Action)
-        case backButtonTapped(BackCrossButton.Action)
+        case mainButton(MainButton.Action)
+        case bottomButtons(BottomButtons.Action)
+        case backButton(BackCrossButton.Action)
         case didAppear
     }
+    
+    @Dependency(\.openURL) var openURL
     
     var body: some ReducerOf<Onboarding> {
         Reduce { state, action in
             switch action {
-            case .buttonTapped(.buttonTapped):
-                return .send(.buttonTapped(.updateLoadingState(true)))
-            case .buttonTapped:
+            case .mainButton:
                 return .none
-            case .bottomButtonsTapped:
+                //            case .bottomButtons(.privacyButtonTapped):
+                //                let link = URL(string: "https://www.google.com")
+                //          return .run { _ in
+                //              await openURL.callAsFunction(link ?? URL(fileURLWithPath: ""))
+                //          }
+                
+            case .bottomButtons(.termsButtonTapped):
                 return .none
-            case .backButtonTapped(.buttonTapped):
-                return .send(.buttonTapped(.updateLoadingState(false)))
+            case .bottomButtons(.restoreButtonTapped):
+                return .none
+            case .backButton:
+                return .none
             case .didAppear:
-                switch state.myType {
-                case . first:
-                    state.continueButton = MainButton.State(buttonText: "start")
-                case .second, .third:
-                    state.continueButton = MainButton.State(buttonText: "continue")
-                case .fourth:
-                    state.continueButton = MainButton.State(buttonText: "finish")
-                }
+                return .none
+            case .bottomButtons(.privacyButtonTapped):
                 return .none
             }
         }
-        .ifLet(\.continueButton, action: \.buttonTapped) {
-            MainButton()
-        }
     }
-    
 }
+
 
 struct OnboardingScreens: View {
     let store: StoreOf<Onboarding>
@@ -107,7 +108,7 @@ struct OnboardingScreens: View {
                 BackCrossButtonView(
                     store: store.scope(
                         state: \.backCrossButton,
-                        action: \.backButtonTapped))
+                        action: \.backButton))
                 Spacer()
             }
             VStack{
@@ -125,19 +126,21 @@ struct OnboardingScreens: View {
             Spacer()
             
             Image(uiImage: store.image)
-
+            
             Spacer()
             
-            if let store = store.scope(state: \.continueButton, action: \.buttonTapped) {
-                MainButtonView(store: store)
-            }
-                
+            MainButtonView(
+                store: store.scope(
+                    state: \.continueButton,
+                    action: \.mainButton)
+            )
+            
             Spacer()
             
             BottomButtonsView(
                 store: store.scope(
                     state: \.bottomButtons,
-                    action: \.bottomButtonsTapped)
+                    action: \.bottomButtons)
             )
         }
         .containerRelativeFrame([.horizontal, .vertical])

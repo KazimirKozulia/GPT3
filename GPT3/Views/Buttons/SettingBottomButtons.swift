@@ -13,6 +13,7 @@ struct SettingBottomButtons {
     
     @ObservableState
     struct State: Equatable {
+        var buttonsText: String
     }
     
     enum Action {
@@ -33,32 +34,16 @@ struct SettingBottomButtonsView: View {
     let store: StoreOf<SettingBottomButtons>
     var body: some View {
         VStack {
-            Button(action:{
+            Button{
                 
-            }, label:{
-                Text("TERMS OF USE")
+            } label:{
+                Text(store.buttonsText)
                     .foregroundStyle(Color.mainText)
                     .frame(minWidth: 0, maxWidth: 300)
                     .padding()
                     .background(Color.backgroundBottomButtons)
                     .cornerRadius(20)
                     .shadow(color: .gray, radius: 5.0, x:0, y:5)
-            })
-            ZStack{
-                Image(.vector)
-
-                Button(action:{
-                    
-                }, label:{
-                    Text("PRIVACY POLICY")
-                        .foregroundStyle(Color.mainText)
-                        .frame(minWidth: 0, maxWidth: 300)
-                        .padding()
-                        .background(Color.backgroundBottomButtons)
-                        .cornerRadius(20)
-                        .shadow(color: .gray, radius: 5.0, x:0, y:5)
-                })
-
             }
         }
     }

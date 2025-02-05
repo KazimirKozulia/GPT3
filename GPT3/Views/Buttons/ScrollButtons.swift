@@ -12,13 +12,14 @@ import ComposableArchitecture
 struct ScrollButtons {
     
     @ObservableState
-    struct State: Equatable {
-        var topButtonsText: Text 
+    struct State: Identifiable, Equatable {
+        var id: UUID
+        var topButtonsText: Text
         var buttonsText: Text
     }
     
     enum Action {
-        case buttonTapped
+        case buttonTapped(id: UUID)
     }
     
     var body: some ReducerOf<ScrollButtons> {
@@ -34,9 +35,9 @@ struct ScrollButtons {
 struct ScrollButtonsView: View {
     let store: StoreOf<ScrollButtons>
     var body: some View {
-        Button(action:{
+        Button{
             
-        }, label:{
+        } label:{
             Text("\(store.topButtonsText.foregroundStyle(.mainText)) \n \(store.buttonsText.foregroundStyle(.backButtonSetting))")
             
                 .frame(width: 120, height: 45)
@@ -47,13 +48,7 @@ struct ScrollButtonsView: View {
                     RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.white, lineWidth: 1)
                 )
-
-
-            //                .overlay(
-            //                    Capsule(style: .continuous)
-            //                        .stroke(Color.white, style: StrokeStyle(lineWidth: 1))
-            //                )
-        })
+        }
     }
 }
 

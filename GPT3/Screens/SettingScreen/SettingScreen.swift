@@ -14,26 +14,27 @@ struct Setting {
     @ObservableState
     struct State: Equatable {
         var backSettingButton = BackSettingButton.State()
-       
-        var chatButtons = SettingChatButton.State()
-        var bottomButtons = SettingBottomButtons.State()
+        var newChatButtons = SettingChatButton.State(buttonsText: "NEW CHAT")
+        var chatHistoryButtons = SettingChatButton.State(buttonsText: "CHAT HISTORY")
+        var termsButton = SettingBottomButtons.State(buttonsText: "TERMS OF USE")
+        var privacyButton = SettingBottomButtons.State(buttonsText: "PRIVACY POLICY")
     }
     
     enum Action {
-        case backSettingButtonTapped(BackSettingButton.Action)
+        case backSettingButton(BackSettingButton.Action)
   
-        case chatButtonsTapped(SettingChatButton.Action)
-        case bottomButtonsTapped(SettingBottomButtons.Action)
+        case chatButtons(SettingChatButton.Action)
+        case bottomButtons(SettingBottomButtons.Action)
     }
     
     var body: some ReducerOf<Setting> {
         Reduce { state, action in
             switch action {
-            case .backSettingButtonTapped:
+            case .backSettingButton:
                 return .none
-            case .chatButtonsTapped(_):
+            case .chatButtons(_):
                 return .none
-            case .bottomButtonsTapped(_):
+            case .bottomButtons(_):
                 return.none
             }
         }
@@ -45,7 +46,7 @@ struct SettingScreen: View {
     var body: some View {
         VStack{
             HStack{
-                BackSettingButtonView(store: store.scope(state: \.backSettingButton, action: \.backSettingButtonTapped ))
+                BackSettingButtonView(store: store.scope(state: \.backSettingButton, action: \.backSettingButton))
                 
                 Text("Settings")
                     .foregroundStyle(.backButtonSetting)
@@ -66,8 +67,8 @@ struct SettingScreen: View {
                             .foregroundStyle(.white)
                             .padding(.leading, 30)
                         
-                        Button(action:{
-                        }, label: {     Text("Tap to claim")})
+                        Button{
+                        } label: {     Text("Tap to claim")}
                         .foregroundStyle(.indigo)
                         .background(Color.yellow)
                         .cornerRadius(20)
@@ -82,11 +83,17 @@ struct SettingScreen: View {
                 }
                 
             }
-            SettingChatButtonView (store: store.scope(state: \.chatButtons, action: \.chatButtonsTapped ))
-
+            SettingChatButtonView (store: store.scope(state: \.newChatButtons, action: \.chatButtons ))
+            ZStack(alignment: .trailing){
+                SettingChatButtonView (store: store.scope(state: \.chatHistoryButtons, action: \.chatButtons ))
+                Image(.vector)
+                    .padding(.horizontal, 20)
+            }
             Spacer()
             
-            SettingBottomButtonsView (store: store.scope(state: \.bottomButtons, action: \.bottomButtonsTapped ))
+            SettingBottomButtonsView (store: store.scope(state: \.termsButton, action: \.bottomButtons ))
+            
+            SettingBottomButtonsView (store: store.scope(state: \.privacyButton, action: \.bottomButtons ))
         }  .containerRelativeFrame([.horizontal, .vertical])
             .background(.mainBackground)
     }
