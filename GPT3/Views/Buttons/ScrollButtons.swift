@@ -14,8 +14,8 @@ struct ScrollButtons {
     @ObservableState
     struct State: Identifiable, Equatable {
         var id: UUID
-        var topButtonsText: Text
-        var buttonsText: Text
+        var topButtonsText: String
+        var buttonsText: String
     }
     
     enum Action {
@@ -38,8 +38,11 @@ struct ScrollButtonsView: View {
         Button{
             
         } label:{
-            Text("\(store.topButtonsText.foregroundStyle(.mainText)) \n \(store.buttonsText.foregroundStyle(.backButtonSetting))")
-            
+//            Text("\(store.topButtonsText/*foregroundStyle(.mainText)*/) \n \(store.buttonsText/*.foregroundStyle(.backButtonSetting)*/)")
+            VStack{
+                Text("\(store.topButtonsText)").foregroundStyle(.mainText)
+                Text(" \(store.buttonsText)").foregroundStyle(.backButtonSetting)
+            }
                 .frame(width: 120, height: 45)
                 .padding()
                 .background(Color.backgroundScrollButtons)

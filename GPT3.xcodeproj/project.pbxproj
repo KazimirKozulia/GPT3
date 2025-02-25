@@ -21,12 +21,17 @@
 		33A11CAC2D425CE70009A287 /* BackCrossButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A11CAB2D425CD70009A287 /* BackCrossButton.swift */; };
 		33A11CB02D4261300009A287 /* BottomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A11CAF2D4261180009A287 /* BottomButtons.swift */; };
 		33A11CBF2D43CF180009A287 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A11CBE2D43CEF80009A287 /* Onboarding.swift */; };
+		33B7C0282D675E2100DBCB87 /* AdaptyKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B7C0272D675E1400DBCB87 /* AdaptyKeys.swift */; };
+		33B7C0312D676DBC00DBCB87 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B7C0302D676DBA00DBCB87 /* Fonts.swift */; };
+		33B7C0362D678AB700DBCB87 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B7C0352D678AB100DBCB87 /* Extension.swift */; };
+		33B7C0392D678CB300DBCB87 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 33B7C0372D678CB300DBCB87 /* Localizable.strings */; };
 		33C1D9642D466C3100D5D99C /* SettingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C1D9632D466C2500D5D99C /* SettingButton.swift */; };
 		33C1D9662D46717700D5D99C /* SettingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C1D9652D46717000D5D99C /* SettingScreen.swift */; };
 		33C1D9682D46721200D5D99C /* ScrollButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C1D9672D46720800D5D99C /* ScrollButtons.swift */; };
 		33C1D96A2D4675B300D5D99C /* BackSettingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C1D9692D46755000D5D99C /* BackSettingButton.swift */; };
 		33C1D9702D46922000D5D99C /* SettingChatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C1D96F2D4691ED00D5D99C /* SettingChatButton.swift */; };
 		33C1D9722D46971D00D5D99C /* SettingBottomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C1D9712D46970300D5D99C /* SettingBottomButtons.swift */; };
+		33E9CB0E2D5A788600082FFD /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E9CB0D2D5A787700082FFD /* GlobalSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,12 +69,17 @@
 		33A11CAB2D425CD70009A287 /* BackCrossButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackCrossButton.swift; sourceTree = "<group>"; };
 		33A11CAF2D4261180009A287 /* BottomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButtons.swift; sourceTree = "<group>"; };
 		33A11CBE2D43CEF80009A287 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		33B7C0272D675E1400DBCB87 /* AdaptyKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptyKeys.swift; sourceTree = "<group>"; };
+		33B7C0302D676DBA00DBCB87 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		33B7C0352D678AB100DBCB87 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		33B7C0382D678CB300DBCB87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		33C1D9632D466C2500D5D99C /* SettingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButton.swift; sourceTree = "<group>"; };
 		33C1D9652D46717000D5D99C /* SettingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScreen.swift; sourceTree = "<group>"; };
 		33C1D9672D46720800D5D99C /* ScrollButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollButtons.swift; sourceTree = "<group>"; };
 		33C1D9692D46755000D5D99C /* BackSettingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackSettingButton.swift; sourceTree = "<group>"; };
 		33C1D96F2D4691ED00D5D99C /* SettingChatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingChatButton.swift; sourceTree = "<group>"; };
 		33C1D9712D46970300D5D99C /* SettingBottomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingBottomButtons.swift; sourceTree = "<group>"; };
+		33E9CB0D2D5A787700082FFD /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -151,6 +161,10 @@
 		337B44CB2D41564600B06836 /* GPT3 */ = {
 			isa = PBXGroup;
 			children = (
+				33B7C0342D678A7E00DBCB87 /* Extension */,
+				33B7C0322D676FA000DBCB87 /* Resources */,
+				33B7C0272D675E1400DBCB87 /* AdaptyKeys.swift */,
+				33E9CB0D2D5A787700082FFD /* GlobalSettings.swift */,
 				33C1D96E2D467CFA00D5D99C /* Screens */,
 				337B44DA2D41564A00B06836 /* Views */,
 				337B44BD2D41564600B06836 /* Preview Content */,
@@ -193,6 +207,39 @@
 				337B44CA2D41564600B06836 /* PaywallSaleScreen.swift */,
 			);
 			path = PaywallScreens;
+			sourceTree = "<group>";
+		};
+		33B7C02F2D676D4200DBCB87 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				33B7C0302D676DBA00DBCB87 /* Fonts.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		33B7C0322D676FA000DBCB87 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				33B7C0332D677B8B00DBCB87 /* Fonts */,
+				33B7C02F2D676D4200DBCB87 /* Generated */,
+				33B7C0372D678CB300DBCB87 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		33B7C0332D677B8B00DBCB87 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		33B7C0342D678A7E00DBCB87 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				33B7C0352D678AB100DBCB87 /* Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		33C1D96B2D467CC000D5D99C /* MainScreen */ = {
@@ -360,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				337B44CC2D41564600B06836 /* Preview Assets.xcassets in Resources */,
+				33B7C0392D678CB300DBCB87 /* Localizable.strings in Resources */,
 				337B44CD2D41564600B06836 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,11 +442,15 @@
 				33034FF32D4D409A007BAA25 /* ChatScreen.swift in Sources */,
 				33C1D9722D46971D00D5D99C /* SettingBottomButtons.swift in Sources */,
 				337B44DD2D41567700B06836 /* MainButton.swift in Sources */,
+				33B7C0362D678AB700DBCB87 /* Extension.swift in Sources */,
 				33C1D9662D46717700D5D99C /* SettingScreen.swift in Sources */,
 				337B44D72D41564600B06836 /* PaywallFullAccessScreen.swift in Sources */,
+				33E9CB0E2D5A788600082FFD /* GlobalSettings.swift in Sources */,
+				33B7C0282D675E2100DBCB87 /* AdaptyKeys.swift in Sources */,
 				33C1D9642D466C3100D5D99C /* SettingButton.swift in Sources */,
 				33C1D9682D46721200D5D99C /* ScrollButtons.swift in Sources */,
 				33C1D9702D46922000D5D99C /* SettingChatButton.swift in Sources */,
+				33B7C0312D676DBC00DBCB87 /* Fonts.swift in Sources */,
 				33A11CBF2D43CF180009A287 /* Onboarding.swift in Sources */,
 				337B44D82D41564600B06836 /* PaywallGetFullAccess.swift in Sources */,
 				337B44D92D41564600B06836 /* PaywallSaleScreen.swift in Sources */,
@@ -433,6 +485,17 @@
 			targetProxy = 337B44182D3BD4F800B06836 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		33B7C0372D678CB300DBCB87 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33B7C0382D678CB300DBCB87 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		337B441F2D3BD4F800B06836 /* Debug */ = {

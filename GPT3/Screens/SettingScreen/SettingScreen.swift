@@ -22,7 +22,6 @@ struct Setting {
     
     enum Action {
         case backSettingButton(BackSettingButton.Action)
-  
         case chatButtons(SettingChatButton.Action)
         case bottomButtons(SettingBottomButtons.Action)
     }
@@ -68,7 +67,7 @@ struct SettingScreen: View {
                             .padding(.leading, 30)
                         
                         Button{
-                        } label: {     Text("Tap to claim")}
+                        } label: { Text("Tap to claim")}
                         .foregroundStyle(.indigo)
                         .background(Color.yellow)
                         .cornerRadius(20)

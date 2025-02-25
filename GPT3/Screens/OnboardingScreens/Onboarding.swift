@@ -60,8 +60,6 @@ struct Onboarding {
                 UIImage(resource:.uploadingFiles)
             }
         }
-        
-        //        @Shared(.generalPaywall) var generalPaywall = GeneralPaywall(data: [:])
     }
     
     enum Action {
@@ -71,19 +69,12 @@ struct Onboarding {
         case didAppear
     }
     
-    @Dependency(\.openURL) var openURL
     
     var body: some ReducerOf<Onboarding> {
         Reduce { state, action in
             switch action {
             case .mainButton:
                 return .none
-                //            case .bottomButtons(.privacyButtonTapped):
-                //                let link = URL(string: "https://www.google.com")
-                //          return .run { _ in
-                //              await openURL.callAsFunction(link ?? URL(fileURLWithPath: ""))
-                //          }
-                
             case .bottomButtons(.termsButtonTapped):
                 return .none
             case .bottomButtons(.restoreButtonTapped):

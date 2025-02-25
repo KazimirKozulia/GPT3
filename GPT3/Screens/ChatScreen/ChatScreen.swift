@@ -104,23 +104,23 @@ struct ChatScreen: View {
                         }
                     }
                 }
-                
-                HStack {
-                    TextField("Send a message...", text: viewStore.binding(
-                        get: \.newMessageText,
-                        send: Chat.Action.newMessageTextChanged
-                    ))
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    
+                ZStack(alignment: .trailing){
+                    HStack {
+                        TextField("Send a message...", text: viewStore.binding(
+                            get: \.newMessageText,
+                            send: Chat.Action.newMessageTextChanged
+                        ))
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    } .padding()
                     Button{
                         store.send(.sendMessage)
                     } label: {
-                        Image(systemName: "paperplane.fill")
+                        Image(.paperPlane)
                             .foregroundColor(.blue)
                     }
+                    .padding(.horizontal, 20)
                     .disabled(store.state.newMessageText.isEmpty)
                 }
-                .padding()
             }
         }
         

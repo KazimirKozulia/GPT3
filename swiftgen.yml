@@ -1,0 +1,12 @@
+input_dir: GPT3/Resources
+output_dir: GPT3/Resources/Generated
+
+fonts:
+    inputs:
+        - Fonts
+    outputs:
+        templateName: swift5
+        output: Fonts.swift
+        params:
+            enumName: Fonts
+

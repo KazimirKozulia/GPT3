@@ -43,7 +43,7 @@ struct Main {
                     ("Science", "Question")
                 ]
                 state.scrollButtons = IdentifiedArray(uniqueElements: buttons.map{
-                    ScrollButtons.State(id: UUID(), topButtonsText: Text($0.0), buttonsText: Text($0.1))
+                    ScrollButtons.State(id: UUID(), topButtonsText: "\($0.0)", buttonsText: "\($0.1)")
                 })
                 return .none
             }
@@ -85,8 +85,10 @@ struct MainScreen: View {
                 HStack{
                     ForEach(store.scope(state:\.scrollButtons, action:\.scrollButtons)){ childStore in
                         ScrollButtonsView(store: childStore)
+//                            .contentShape(Rectangle())
+//                            .allowsHitTesting(true)
                     }
-                }                .padding(.horizontal, 20)
+                }              .padding(.horizontal, 20)
                 
                 
             }
@@ -100,7 +102,7 @@ struct MainScreen: View {
         } .onAppear {
             store.send(.onAppear)
         }
-        .containerRelativeFrame([.horizontal, .vertical])
+//        .containerRelativeFrame([.horizontal, .vertical])
             .background(.mainBackground)
     }
 }

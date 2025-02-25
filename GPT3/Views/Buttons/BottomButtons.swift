@@ -8,18 +8,15 @@
 import SwiftUI
 import ComposableArchitecture
 
-//enum BottomButtonsType {
-//    case terms
-//    case restore
-//    case privacy
-//}
 @Reducer
 struct BottomButtons {
     
     @ObservableState
     struct State: Equatable {
-//        let buttonsType: BottomButtonsType
+
         var urlToOpen: URL?
+        var globalSettings: GlobalSettings = GlobalSettings(privacyPolicyLink: "https://www.example.com/privacy")
+
     }
     
     enum Action {
@@ -28,23 +25,24 @@ struct BottomButtons {
         case privacyButtonTapped
     }
     
+    @Dependency(\.openURL) var openURL
+    
+
+    
     var body: some ReducerOf<BottomButtons> {
         Reduce { state, action in
             switch action {
+
             case .termsButtonTapped:
-                //                switch state.buttonsType {
-                //                case .terms:
-                //
-                //                case .restore:
-                //
-                //                case .privacy:
-                //
-                //                }
-            return .none
+                return .none
             case .restoreButtonTapped:
                 return .none
             case .privacyButtonTapped:
-                return .none
+                guard let privacyLink: String = state.globalSettings.privacyPolicyLink,
+                      let link = URL(string: privacyLink) else { return .none }
+                return .run { _ in
+                    await openURL.callAsFunction(link)
+                }
             }
         }
     }
