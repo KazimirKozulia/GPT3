@@ -15,7 +15,7 @@ struct BottomButtons {
     struct State: Equatable {
 
         var urlToOpen: URL?
-        var globalSettings: GlobalSettings = GlobalSettings(privacyPolicyLink: "https://www.example.com/privacy")
+//        @Shared(.generalPaywall) var generalPaywall = GeneralPaywall(data: [:])
 
     }
     
@@ -38,11 +38,12 @@ struct BottomButtons {
             case .restoreButtonTapped:
                 return .none
             case .privacyButtonTapped:
-                guard let privacyLink: String = state.globalSettings.privacyPolicyLink,
-                      let link = URL(string: privacyLink) else { return .none }
-                return .run { _ in
-                    await openURL.callAsFunction(link)
-                }
+                return .none
+//                guard let privacyLink: String = state.globalSettings.privacyPolicyLink,
+//                      let link = URL(string: privacyLink) else { return .none }
+//                return .run { _ in
+//                    await openURL.callAsFunction(link)
+//                }
             }
         }
     }

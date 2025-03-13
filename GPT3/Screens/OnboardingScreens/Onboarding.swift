@@ -73,19 +73,22 @@ struct Onboarding {
     var body: some ReducerOf<Onboarding> {
         Reduce { state, action in
             switch action {
-            case .mainButton:
-                return .none
+            case .mainButton(.buttonTapped):
+                return .send(.mainButton(.buttonTapped))
             case .bottomButtons(.termsButtonTapped):
                 return .none
             case .bottomButtons(.restoreButtonTapped):
+                return .none
+            case .bottomButtons(.privacyButtonTapped):
                 return .none
             case .backButton:
                 return .none
             case .didAppear:
                 return .none
-            case .bottomButtons(.privacyButtonTapped):
-                return .none
             }
+        }
+        Scope(state: \.continueButton, action: \.mainButton) {
+            MainButton()
         }
     }
 }

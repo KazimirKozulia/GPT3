@@ -4,13 +4,13 @@
 //
 //  Created by Kazimir Kozulia on 10.02.2025.
 //
-import SwiftUI
-
-import ComposableArchitecture
-
-struct GlobalSettings: Equatable {
-    let privacyPolicyLink: String?
-}
+//import SwiftUI
+//
+//import ComposableArchitecture
+//
+//struct GlobalSettings: Equatable {
+//    let privacyPolicyLink: String?
+//}
 
 //extension DependencyValues {
 //    var openURL: (URL) async -> Bool {

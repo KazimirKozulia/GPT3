@@ -25,6 +25,12 @@
 		33B7C0312D676DBC00DBCB87 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B7C0302D676DBA00DBCB87 /* Fonts.swift */; };
 		33B7C0362D678AB700DBCB87 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B7C0352D678AB100DBCB87 /* Extension.swift */; };
 		33B7C0392D678CB300DBCB87 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 33B7C0372D678CB300DBCB87 /* Localizable.strings */; };
+		33B7C03E2D709B3800DBCB87 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 33B7C03D2D709B3800DBCB87 /* FirebaseAnalytics */; };
+		33B7C0402D709B3800DBCB87 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 33B7C03F2D709B3800DBCB87 /* FirebaseCrashlytics */; };
+		33B7C0422D709C1500DBCB87 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33B7C0412D709C1500DBCB87 /* GoogleService-Info.plist */; };
+		33B7C05D2D70E0F100DBCB87 /* Adapty in Frameworks */ = {isa = PBXBuildFile; productRef = 33B7C05C2D70E0F100DBCB87 /* Adapty */; };
+		33B7C05F2D70EC5D00DBCB87 /* GPTNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B7C05E2D70EC4C00DBCB87 /* GPTNavigation.swift */; };
+		33B7C0682D749E5300DBCB87 /* AdaptyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B7C0672D749E4600DBCB87 /* AdaptyService.swift */; };
 		33C1D9642D466C3100D5D99C /* SettingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C1D9632D466C2500D5D99C /* SettingButton.swift */; };
 		33C1D9662D46717700D5D99C /* SettingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C1D9652D46717000D5D99C /* SettingScreen.swift */; };
 		33C1D9682D46721200D5D99C /* ScrollButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C1D9672D46720800D5D99C /* ScrollButtons.swift */; };
@@ -73,6 +79,9 @@
 		33B7C0302D676DBA00DBCB87 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		33B7C0352D678AB100DBCB87 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		33B7C0382D678CB300DBCB87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		33B7C0412D709C1500DBCB87 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		33B7C05E2D70EC4C00DBCB87 /* GPTNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTNavigation.swift; sourceTree = "<group>"; };
+		33B7C0672D749E4600DBCB87 /* AdaptyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptyService.swift; sourceTree = "<group>"; };
 		33C1D9632D466C2500D5D99C /* SettingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButton.swift; sourceTree = "<group>"; };
 		33C1D9652D46717000D5D99C /* SettingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScreen.swift; sourceTree = "<group>"; };
 		33C1D9672D46720800D5D99C /* ScrollButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollButtons.swift; sourceTree = "<group>"; };
@@ -100,6 +109,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33B7C0402D709B3800DBCB87 /* FirebaseCrashlytics in Frameworks */,
+				33B7C05D2D70E0F100DBCB87 /* Adapty in Frameworks */,
+				33B7C03E2D709B3800DBCB87 /* FirebaseAnalytics in Frameworks */,
 				337B44FD2D4168D300B06836 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,9 +173,10 @@
 		337B44CB2D41564600B06836 /* GPT3 */ = {
 			isa = PBXGroup;
 			children = (
+				33B7C0672D749E4600DBCB87 /* AdaptyService.swift */,
+				33B7C0272D675E1400DBCB87 /* AdaptyKeys.swift */,
 				33B7C0342D678A7E00DBCB87 /* Extension */,
 				33B7C0322D676FA000DBCB87 /* Resources */,
-				33B7C0272D675E1400DBCB87 /* AdaptyKeys.swift */,
 				33E9CB0D2D5A787700082FFD /* GlobalSettings.swift */,
 				33C1D96E2D467CFA00D5D99C /* Screens */,
 				337B44DA2D41564A00B06836 /* Views */,
@@ -172,6 +185,7 @@
 				337B44BF2D41564600B06836 /* ContentView.swift */,
 				337B44C12D41564600B06836 /* GPT3App.swift */,
 				337B44C22D41564600B06836 /* Info.plist */,
+				33B7C0412D709C1500DBCB87 /* GoogleService-Info.plist */,
 			);
 			path = GPT3;
 			sourceTree = "<group>";
@@ -179,6 +193,7 @@
 		337B44DA2D41564A00B06836 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				33B7C05E2D70EC4C00DBCB87 /* GPTNavigation.swift */,
 				33D599C72D50F756001CF328 /* Buttons */,
 			);
 			path = Views;
@@ -295,6 +310,7 @@
 				337B43F92D3BD4F700B06836 /* Sources */,
 				337B43FA2D3BD4F700B06836 /* Frameworks */,
 				337B43FB2D3BD4F700B06836 /* Resources */,
+				33B7C0602D72231F00DBCB87 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -303,6 +319,9 @@
 			name = GPT3;
 			packageProductDependencies = (
 				337B44FC2D4168D300B06836 /* ComposableArchitecture */,
+				33B7C03D2D709B3800DBCB87 /* FirebaseAnalytics */,
+				33B7C03F2D709B3800DBCB87 /* FirebaseCrashlytics */,
+				33B7C05C2D70E0F100DBCB87 /* Adapty */,
 			);
 			productName = GPT3;
 			productReference = 337B43FD2D3BD4F700B06836 /* GPT3.app */;
@@ -388,6 +407,8 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				337B44622D414C4100B06836 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				33B7C03C2D709B3800DBCB87 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				33B7C05B2D70E0F100DBCB87 /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 337B43FE2D3BD4F700B06836 /* Products */;
@@ -407,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				337B44CC2D41564600B06836 /* Preview Assets.xcassets in Resources */,
+				33B7C0422D709C1500DBCB87 /* GoogleService-Info.plist in Resources */,
 				33B7C0392D678CB300DBCB87 /* Localizable.strings in Resources */,
 				337B44CD2D41564600B06836 /* Assets.xcassets in Resources */,
 			);
@@ -428,6 +450,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33B7C0602D72231F00DBCB87 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "find \"${BUILT_PRODUCTS_DIR}\" -name \"*.dSYM\" | xargs -I \\{\\} \"${BUILD_DIR%Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/upload-symbols\" -gsp \"${SRCROOT}/GPT3/GoogleService-Info.plist\" -p ios \\{\\}\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		337B43F92D3BD4F700B06836 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -442,6 +485,7 @@
 				33034FF32D4D409A007BAA25 /* ChatScreen.swift in Sources */,
 				33C1D9722D46971D00D5D99C /* SettingBottomButtons.swift in Sources */,
 				337B44DD2D41567700B06836 /* MainButton.swift in Sources */,
+				33B7C05F2D70EC5D00DBCB87 /* GPTNavigation.swift in Sources */,
 				33B7C0362D678AB700DBCB87 /* Extension.swift in Sources */,
 				33C1D9662D46717700D5D99C /* SettingScreen.swift in Sources */,
 				337B44D72D41564600B06836 /* PaywallFullAccessScreen.swift in Sources */,
@@ -451,6 +495,7 @@
 				33C1D9682D46721200D5D99C /* ScrollButtons.swift in Sources */,
 				33C1D9702D46922000D5D99C /* SettingChatButton.swift in Sources */,
 				33B7C0312D676DBC00DBCB87 /* Fonts.swift in Sources */,
+				33B7C0682D749E5300DBCB87 /* AdaptyService.swift in Sources */,
 				33A11CBF2D43CF180009A287 /* Onboarding.swift in Sources */,
 				337B44D82D41564600B06836 /* PaywallGetFullAccess.swift in Sources */,
 				337B44D92D41564600B06836 /* PaywallSaleScreen.swift in Sources */,
@@ -795,6 +840,22 @@
 				minimumVersion = 1.17.1;
 			};
 		};
+		33B7C03C2D709B3800DBCB87 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.9.0;
+			};
+		};
+		33B7C05B2D70E0F100DBCB87 /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adaptyteam/AdaptySDK-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.3.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -802,6 +863,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 337B44622D414C4100B06836 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		33B7C03D2D709B3800DBCB87 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33B7C03C2D709B3800DBCB87 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		33B7C03F2D709B3800DBCB87 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33B7C03C2D709B3800DBCB87 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		33B7C05C2D70E0F100DBCB87 /* Adapty */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33B7C05B2D70E0F100DBCB87 /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */;
+			productName = Adapty;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

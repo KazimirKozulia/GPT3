@@ -14,6 +14,9 @@ struct MainButton {
     @ObservableState
     struct State: Equatable {
         var buttonText: String
+        @Shared(.isOnboardingPassed) var isOnboardingPassed: Bool = false
+        
+        
     }
     
     enum Action {
@@ -34,7 +37,7 @@ struct MainButtonView: View {
     let store: StoreOf<MainButton>
     var body: some View {
         Button{
-            
+            store.send(.buttonTapped)
         } label:{
             Text(store.buttonText)
                 .frame(minWidth: 0, maxWidth: 300)

@@ -60,7 +60,7 @@ struct MainScreen: View {
         VStack{
             HStack{
                 SettingButtonView(store: store.scope(state: \.settingButton, action: \.settingButton))
-                
+
                 Spacer()
                 
                 Text("SpeakGenius")
