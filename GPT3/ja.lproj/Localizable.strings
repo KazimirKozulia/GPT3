@@ -1,0 +1,64 @@
+/* 
+  Localizable.strings
+  GPT3
+
+  Created by Kazimir Kozulia on 20.02.2025.
+  
+*/
+
+"continue.button.text" = "続ける";
+"firstOnboardingScreen.main.title" = "どんな質問でもしてみてください";
+"secondOnboardingScreen.main.title" = "アプリを \n 評価してください!";
+"thirdOnboardingScreen.main.title" = "すべてに答えを \n 得る";
+"fourthOnboardingScreen.main.title" = "数秒でコンテンツを生成";
+"firstOnboardingScreen.subtitle" = "ChatBotを使用すると、問い合わせに対する迅速な回答を受け取ったり、役立つ提案を受けたりして、さまざまなタスクを簡単に完了させることができます。";
+"secondOnboardingScreen.subtitle" = "常にフィードバックを評価し、製品の品質向上に努めています!";
+"thirdOnboardingScreen.subtitle" = "AI言語モデルアプリは、幅広いトピックに対応した答えを提供できます!";
+"fourthOnboardingScreen.subtitle" = "多様なコンテンツを生成できるため、当ツールは様々なコンテキストやアプリケーションで非常に有用です。";
+"firstPaywallScreen.main.title" = "無制限の \n 全機能へのアクセス";
+"firstPaywallScreen.billed.title" = "週単位で課金";
+"firstPaywallScreen.usd.title" = "米ドル";
+"firstPaywallScreen.renewable.title" = "自動更新。いつでもキャンセル可能。";
+"secondPaywallScreen.main.title" = "フルアクセスを取得";
+"secondPaywallScreen.main.subtitle" = "無制限利用 \n 広告なし体験 \n 高い文字数制限 \n 先進的なAIモデル";
+"secondPaywallScreen.try3Days" = "3日間無料体験後、$0.99/週 \n いつでもキャンセル可能";
+"thirdPaywallScreen.main.title" = "特別オファー \n フルアクセスを取得";
+"thirdPaywallScreen.main.subtitle" = "パーソナライズされた回答、\n より速い処理時間、\n 強化されたパフォーマンス。";
+"thirdPaywallScreen.try.button" = "今すぐ試す！";
+"thirdPaywallScreen.timer.title" = "オファー終了までの残り時間";
+"thirdPaywallScreen.oldPrice.button" = "以前の価格 $49.99";
+"thirdPaywallScreen.getOptions.button" = "すべての機能を$19.99/年で";
+"firstPaywallButton.titile" = "週単位";
+"secondPaywallButton.titile" = "月単位";
+"thirdPaywallButton.titile" = "年単位";
+"mainScreen.main.title" = "SpeakGenius";
+"mainScreen.title" = "準備されたプロンプト";
+"new.chat.button.text" = "新しいチャット";
+"chat.history.button.text" = "チャット履歴";
+"terms.of.use.button.text" = "利用規約";
+"privacy.policy.button.text" = "プライバシーポリシー";
+"chat.send.message.text.field" = "メッセージを送信...";
+"settings.back.button.title" = "設定";
+"free.premium.title" = "あなたの無料3日間の \n プレミアムがまだ \n 取得されていません。";
+"free.premium.button.text" = "取得するにはタップ";
+"first.scroll.button.title" = "ジョークを";
+"first.scroll.button.subtitle" = "話して";
+"second.scroll.button.title" = "レシピを";
+"second.scroll.button.subtitle" = "与えて";
+"third.scroll.button.title" = "コードを";
+"third.scroll.button.subtitle" = "書いて";
+"fourth.scroll.button.title" = "歌を";
+"fourth.scroll.button.subtitle" = "書いて";
+"fifth.scroll.button.title" = "メールを";
+"fifth.scroll.button.subtitle" = "書いて";
+"sixth.scroll.button.title" = "要約";
+"sixth.scroll.button.subtitle" = "テキスト";
+"seventh.scroll.button.title" = "詩を";
+"seventh.scroll.button.subtitle" = "書いて";
+"eighth.scroll.button.title" = "エッセイを";
+"eighth.scroll.button.subtitle" = "書いて";
+"ninth.scroll.button.title" = "科学";
+"ninth.scroll.button.subtitle" = "質問";
+"bottomButton.terms.text" = "利用規約";
+"bottomButton.restore.text" = "復元";
+"bottomButton.privacy.text" = "プライバシーポリシー";

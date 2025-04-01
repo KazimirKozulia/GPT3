@@ -1,0 +1,64 @@
+/* 
+  Localizable.strings
+  GPT3
+
+  Created by Kazimir Kozulia on 20.02.2025.
+  
+*/
+
+"continue.button.text" = "DEVAM ET";
+"firstOnboardingScreen.main.title" = "Herhangi bir soru sormalayım";
+"secondOnboardingScreen.main.title" = "Lütfen \n Uygulamayı Değerlendirin!";
+"thirdOnboardingScreen.main.title" = "Her Şey İçin Cevap Alın";
+"fourthOnboardingScreen.main.title" = "İçerik Üretmek için Saniyeler İçinde Hazır";
+"firstOnboardingScreen.subtitle" = "ChatBot ile, sorularınıza hızlı yanıt alarak, size faydalı öneriler sunarak ve çeşitli görevleri kolayca tamamlayarak yaşamınızı basitleştirebilirsiniz.";
+"secondOnboardingScreen.subtitle" = "Ürünümüzün kalitesini artırmak için sürekli geri bildirimlerinizi değerlendiriyoruz!";
+"thirdOnboardingScreen.subtitle" = "AI Dil Model uygulamamız, geniş bir konu yelpazesinde cevap sağlayabilir!";
+"fourthOnboardingScreen.subtitle" = "Çeşitli içerik üretme yeteneğine sahip olan araçımız, birden fazla kontekst ve uygulamada kullanışlıdır.";
+"firstPaywallScreen.main.title" = "Sınırsız \n Tüm Özelliklere \n Tam Erişim";
+"firstPaywallScreen.billed.title" = "Haftalık faturalandırma";
+"firstPaywallScreen.usd.title" = "ABD Doları";
+"firstPaywallScreen.renewable.title" = "Otomatik yenileme. İstediğiniz zaman iptal edin.";
+"secondPaywallScreen.main.title" = "Tam Erişim Elde Edin";
+"secondPaywallScreen.main.subtitle" = "Sınırsız Kullanım \n Reklamsız Deneyim \n Daha Yüksek Kelime Sayısı \n Gelişmiş AI Modeli";
+"secondPaywallScreen.try3Days" = "3 gün ücretsiz deneyin, ardından haftada $0.99 \n İstediğiniz zaman iptal edin";
+"thirdPaywallScreen.main.title" = "Sizin İçin Özel Teklif \n Tam Erişim Elde Edin";
+"thirdPaywallScreen.main.subtitle" = "Kişiselleştirilmiş yanıtlar, daha hızlı \n işlem süreleri ve gelişmiş \n performans elde edin.";
+"thirdPaywallScreen.try.button" = "Hemen Deneyin!";
+"thirdPaywallScreen.timer.title" = "Teklifin bitmesine kalan süre";
+"thirdPaywallScreen.oldPrice.button" = "Eski fiyat $49.99";
+"thirdPaywallScreen.getOptions.button" = "Tüm seçenekleri $19.99/yıl alın";
+"firstPaywallButton.titile" = "Haftalık";
+"secondPaywallButton.titile" = "Aylık";
+"thirdPaywallButton.titile" = "Yıllık";
+"mainScreen.main.title" = "Konuşma Dahisi";
+"mainScreen.title" = "Hazır İpuçları";
+"new.chat.button.text" = "YENİ SOHBET";
+"chat.history.button.text" = "SOHBET TARİHİ";
+"terms.of.use.button.text" = "KULLANIM KOŞULLARI";
+"privacy.policy.button.text" = "GİZLİLİK POLİTİKASI";
+"chat.send.message.text.field" = "Mesaj gönder...";
+"settings.back.button.title" = "Ayarlar";
+"free.premium.title" = "Ücretsiz 3 günlük \n premium hala \n talep edilmedi.";
+"free.premium.button.text" = "Talep etmek için dokunun";
+"first.scroll.button.title" = "Bana bir";
+"first.scroll.button.subtitle" = "bakanlık anlat";
+"second.scroll.button.title" = "Bana bir";
+"second.scroll.button.subtitle" = "tarif ver";
+"third.scroll.button.title" = "Yaz bir";
+"third.scroll.button.subtitle" = "kod";
+"fourth.scroll.button.title" = "Yaz bir";
+"fourth.scroll.button.subtitle" = "şarkı";
+"fifth.scroll.button.title" = "Bana yaz";
+"fifth.scroll.button.subtitle" = "e-posta";
+"sixth.scroll.button.title" = "Özetle";
+"sixth.scroll.button.subtitle" = "metin";
+"seventh.scroll.button.title" = "Yaz bir";
+"seventh.scroll.button.subtitle" = "şiir";
+"eighth.scroll.button.title" = "Bana yaz bir";
+"eighth.scroll.button.subtitle" = "tez";
+"ninth.scroll.button.title" = "Bilim";
+"ninth.scroll.button.subtitle" = "soru";
+"bottomButton.terms.text" = "Hizmet Koşulları";
+"bottomButton.restore.text" = "Geri Yükle";
+"bottomButton.privacy.text" = "Gizlilik Politikası";

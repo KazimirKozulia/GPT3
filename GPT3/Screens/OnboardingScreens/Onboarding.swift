@@ -19,33 +19,34 @@ struct Onboarding {
     
     @ObservableState
     struct State: Equatable {
+        @Shared(.isOnboardingPassed) var isOnboardingPassed = false
         let myType: OnboardingType
-        var continueButton = MainButton.State(buttonText: "CONTINUE")
+        var continueButton = MainButton.State(buttonText: Localizable.Continue.Button.text)
         var bottomButtons = BottomButtons.State()
         var backCrossButton = BackCrossButton.State()
         
         var mainTitle:String {
             switch myType {
             case .first:
-                "Ask any questions"
+                Localizable.FirstOnboardingScreen.Main.title
             case .second:
-                "Please \n Rate the App!"
+                Localizable.SecondOnboardingScreen.Main.title
             case .third:
-                "Get Answers \n for Anything"
+                Localizable.ThirdOnboardingScreen.Main.title
             case .fourth:
-                "Generates content \n within seconds"
+                Localizable.FourthOnboardingScreen.Main.title
             }
         }
         var title:String {
             switch myType {
             case .first:
-                "With ChatBot, you can simplify your life by receving quick responses to you inquiries, receving helpful suggestion, and accomplishing a variety of tasks with ease."
+                Localizable.FirstOnboardingScreen.subtitle
             case .second:
-                "At all times, we assess your feedback to enhance the quality of our product!"
+                Localizable.SecondOnboardingScreen.subtitle
             case .third:
-                "Our AI Language model app can supply answers to a vast array of topics!"
+                Localizable.ThirdOnboardingScreen.subtitle
             case .fourth:
-                "Capable of generating diverse content, our tool is useful in multiple context and applications."
+                Localizable.FourthOnboardingScreen.subtitle
             }
         }
         var image:UIImage {
@@ -74,7 +75,18 @@ struct Onboarding {
         Reduce { state, action in
             switch action {
             case .mainButton(.buttonTapped):
-                return .send(.mainButton(.buttonTapped))
+                switch state.myType {
+                case .first:
+                    return .none
+                case .second:
+                    return .none
+                case .third:
+                    return .none
+                case .fourth:
+//                    state.isOnboardingPassed = true
+                    return .none
+                }
+                //                return .send(.mainButton(.buttonTapped))
             case .bottomButtons(.termsButtonTapped):
                 return .none
             case .bottomButtons(.restoreButtonTapped):
@@ -107,11 +119,12 @@ struct OnboardingScreens: View {
             }
             VStack{
                 Text(store.mainTitle)
-                    .font(.system(size: 32, weight: .bold))
+                    .font(Fonts.Roboto.medium.swiftUIFont(size: 35))
                     .multilineTextAlignment(.center)
                     .foregroundStyle(.mainText)
                 
                 Text(store.title)
+                    .font(Fonts.Roboto.regular.swiftUIFont(size: 22))
                     .foregroundStyle(.mainText)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 40)

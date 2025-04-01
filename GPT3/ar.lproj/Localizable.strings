@@ -1,0 +1,64 @@
+/* 
+  Localizable.strings
+  GPT3
+
+  Created by Kazimir Kozulia on 20.02.2025.
+  
+*/
+
+"continue.button.text" = "استمرار";
+"firstOnboardingScreen.main.title" = "اسأل أي أسئلة";
+"secondOnboardingScreen.main.title" = "يرجى \n تقييم التطبيق!";
+"thirdOnboardingScreen.main.title" = "احصل على إجابات \n لكل شيء";
+"fourthOnboardingScreen.main.title" = "يولد محتوى \n في غضون ثوانٍ";
+"firstOnboardingScreen.subtitle" = "مع ChatBot، يمكنك تبسيط حياتك من خلال الحصول على إجابات سريعة على استفساراتك، والحصول على اقتراحات مفيدة، وإتمام مجموعة متنوعة من المهام بسهولة.";
+"secondOnboardingScreen.subtitle" = "نقيم تعليقاتك دائمًا لتحسين جودة منتجنا!";
+"thirdOnboardingScreen.subtitle" = "يمكن لتطبيقنا النموذجي للغة الذكاء الاصطناعي تقديم إجابات حول مجموعة واسعة من المواضيع!";
+"fourthOnboardingScreen.subtitle" = "قادر على توليد محتويات متنوعة، يكون أداة مفيدة في سياقات وأغراض متعددة.";
+"firstPaywallScreen.main.title" = "وصول غير محدود \n إلى جميع الميزات";
+"firstPaywallScreen.billed.title" = "فوترة أسبوعية بـ";
+"firstPaywallScreen.usd.title" = "دولار أمريكي";
+"firstPaywallScreen.renewable.title" = "تجديد تلقائي. يمكن الإلغاء في أي وقت.";
+"secondPaywallScreen.main.title" = "احصل على وصول كامل";
+"secondPaywallScreen.main.subtitle" = "استخدام غير محدود \n تجربة خالية من الإعلانات \n عدد كلمات أعلى \n نموذج ذكاء اصطناعي متقدم";
+"secondPaywallScreen.try3Days" = "جرب 3 أيام مجانًا، ثم 0.99 دولار/أسبوع \n يمكن الإلغاء في أي وقت";
+"thirdPaywallScreen.main.title" = "عرض لك \n احصل على وصول كامل";
+"thirdPaywallScreen.main.subtitle" = "احصل على ردود مخصصة، أوقات معالجة \n أسرع، وأداء محسن.";
+"thirdPaywallScreen.try.button" = "جربه اليوم!";
+"thirdPaywallScreen.timer.title" = "حتى نهاية العرض المتبقي";
+"thirdPaywallScreen.oldPrice.button" = "السعر القديم 49.99 دولار";
+"thirdPaywallScreen.getOptions.button" = "احصل على جميع الخيارات 19.99 دولار/سنوياً";
+"firstPaywallButton.titile" = "أسبوعي";
+"secondPaywallButton.titile" = "شهري";
+"thirdPaywallButton.titile" = "سنوي";
+"mainScreen.main.title" = "سبيك جينيوس";
+"mainScreen.title" = "الإرشادات الجاهزة";
+"new.chat.button.text" = "محادثة جديدة";
+"chat.history.button.text" = "تاريخ الدردشة";
+"terms.of.use.button.text" = "شروط الاستخدام";
+"privacy.policy.button.text" = "سياسة الخصوصية";
+"chat.send.message.text.field" = "أرسل رسالة...";
+"settings.back.button.title" = "الإعدادات";
+"free.premium.title" = "المميزات المجانية لمدة 3 أيام \n لم يتم استردادها بعد.";
+"free.premium.button.text" = "اضغط للاستعادة";
+"first.scroll.button.title" = "اخبرني عن";
+"first.scroll.button.subtitle" = "مزحة";
+"second.scroll.button.title" = "أعطيني";
+"second.scroll.button.subtitle" = "وصفة";
+"third.scroll.button.title" = "اكتب لي";
+"third.scroll.button.subtitle" = "رمز";
+"fourth.scroll.button.title" = "اكتب لي";
+"fourth.scroll.button.subtitle" = "أغنية";
+"fifth.scroll.button.title" = "اكتب لي";
+"fifth.scroll.button.subtitle" = "بريد إلكتروني";
+"sixth.scroll.button.title" = "لخص";
+"sixth.scroll.button.subtitle" = "نص";
+"seventh.scroll.button.title" = "اكتب لي";
+"seventh.scroll.button.subtitle" = "قصيدة";
+"eighth.scroll.button.title" = "اكتب لي";
+"eighth.scroll.button.subtitle" = "مقال";
+"ninth.scroll.button.title" = "علم";
+"ninth.scroll.button.subtitle" = "سؤال";
+"bottomButton.terms.text" = "شروط الخدمة";
+"bottomButton.restore.text" = "استعادة";
+"bottomButton.privacy.text" = "سياسة الخصوصية";

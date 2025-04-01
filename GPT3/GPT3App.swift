@@ -12,7 +12,27 @@ import FirebaseCore
 @main
 struct GPT3App: App {
     
-//    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+        let store = Store(
+        initialState: GPTNavigation.State(),
+        reducer: { GPTNavigation() }
+    )
+    
+    
+//    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
+//    var body: some Scene {
+//        WindowGroup {
+//            WithPerceptionTracking {
+//                GPTNavigationView(
+//                    store: store
+//                )
+//            }
+//            .task {
+//                appDelegate.setApp(store)
+//            }
+//        }
+//    }
+//}
     
     var body: some Scene {
         WindowGroup {

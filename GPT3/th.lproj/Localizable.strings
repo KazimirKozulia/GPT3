@@ -1,0 +1,64 @@
+/* 
+  Localizable.strings
+  GPT3
+
+  Created by Kazimir Kozulia on 20.02.2025.
+  
+*/
+
+"continue.button.text" = "ดำเนินการต่อ";
+"firstOnboardingScreen.main.title" = "ถามคำถามใดๆ ก็ได้";
+"secondOnboardingScreen.main.title" = "กรุณา \n ให้คะแนนแอป!";
+"thirdOnboardingScreen.main.title" = "รับคำตอบ \n สำหรับทุกสิ่ง";
+"fourthOnboardingScreen.main.title" = "สร้างเนื้อหา \n ในไม่กี่วินาที";
+"firstOnboardingScreen.subtitle" = "ด้วย ChatBot คุณสามารถทำให้ชีวิตง่ายขึ้นด้วยการรับคำตอบเร็วสำหรับคำถามของคุณ รับคำแนะนำที่เป็นประโยชน์ และทำงานต่างๆ ได้อย่างง่ายดาย";
+"secondOnboardingScreen.subtitle" = "เราประเมินความคิดเห็นของคุณตลอดเวลาเพื่อปรับปรุงคุณภาพผลิตภัณฑ์ของเรา!";
+"thirdOnboardingScreen.subtitle" = "แอปโมเดลภาษาของเราสามารถให้คำตอบในหัวข้อที่หลากหลาย!";
+"fourthOnboardingScreen.subtitle" = "เครื่องมือของเราสามารถสร้างเนื้อหาที่หลากหลายและมีประโยชน์ในหลายบริบทและการใช้งาน";
+"firstPaywallScreen.main.title" = "ไม่จำกัด \n การเข้าถึงเต็มรูปแบบ \n ทุกคุณสมบัติ";
+"firstPaywallScreen.billed.title" = "เรียกเก็บรายสัปดาห์ที่";
+"firstPaywallScreen.usd.title" = "USD";
+"firstPaywallScreen.renewable.title" = "ต่ออายุอัตโนมัติ ยกเลิกได้ทุกเวลา";
+"secondPaywallScreen.main.title" = "รับการเข้าถึงเต็มรูปแบบ";
+"secondPaywallScreen.main.subtitle" = "ใช้งานไม่จำกัด \n ประสบการณ์ไร้โฆษณา \n จำนวนคำมากขึ้น \n รุ่น AI ขั้นสูง";
+"secondPaywallScreen.try3Days" = "ทดลองใช้ฟรี 3 วัน จากนั้น $0.99/สัปดาห์ \n ยกเลิกได้ทุกเวลา";
+"thirdPaywallScreen.main.title" = "ข้อเสนอสำหรับคุณ \n รับการเข้าถึงเต็มรูปแบบ";
+"thirdPaywallScreen.main.subtitle" = "รับคำตอบที่ปรับแต่งเอง \n เวลาประมวลผลที่เร็วขึ้น \n และประสิทธิภาพที่ดียิ่งขึ้น";
+"thirdPaywallScreen.try.button" = "ลองใช้วันนี้!";
+"thirdPaywallScreen.timer.title" = "เวลาที่เหลือจนกว่าข้อเสนอจะสิ้นสุด";
+"thirdPaywallScreen.oldPrice.button" = "ราคาเดิม $49.99";
+"thirdPaywallScreen.getOptions.button" = "รับทุกตัวเลือก $19.99/ปี";
+"firstPaywallButton.titile" = "รายสัปดาห์";
+"secondPaywallButton.titile" = "รายเดือน";
+"thirdPaywallButton.titile" = "รายปี";
+"mainScreen.main.title" = "SpeakGenius";
+"mainScreen.title" = "พร้อมใช้งาน";
+"new.chat.button.text" = "แชทใหม่";
+"chat.history.button.text" = "ประวัติแชท";
+"terms.of.use.button.text" = "ข้อกำหนดการใช้งาน";
+"privacy.policy.button.text" = "นโยบายความเป็นส่วนตัว";
+"chat.send.message.text.field" = "ส่งข้อความ...";
+"settings.back.button.title" = "การตั้งค่า";
+"free.premium.title" = "คุณยังไม่ได้ใช้งาน \n พรีเมียมฟรี 3 วัน \n ของคุณ";
+"free.premium.button.text" = "แตะเพื่อใช้งาน";
+"first.scroll.button.title" = "บอกฉัน";
+"first.scroll.button.subtitle" = "เรื่องตลก";
+"second.scroll.button.title" = "ให้ฉัน";
+"second.scroll.button.subtitle" = "สูตรอาหาร";
+"third.scroll.button.title" = "เขียน";
+"third.scroll.button.subtitle" = "โค้ด";
+"fourth.scroll.button.title" = "เขียน";
+"fourth.scroll.button.subtitle" = "เพลง";
+"fifth.scroll.button.title" = "เขียน";
+"fifth.scroll.button.subtitle" = "อีเมล";
+"sixth.scroll.button.title" = "สรุป";
+"sixth.scroll.button.subtitle" = "ข้อความ";
+"seventh.scroll.button.title" = "เขียน";
+"seventh.scroll.button.subtitle" = "บทกวี";
+"eighth.scroll.button.title" = "เขียน";
+"eighth.scroll.button.subtitle" = "เรียงความ";
+"ninth.scroll.button.title" = "คำถาม";
+"ninth.scroll.button.subtitle" = "วิทยาศาสตร์";
+"bottomButton.terms.text" = "เงื่อนไขการให้บริการ";
+"bottomButton.restore.text" = "กู้คืน";
+"bottomButton.privacy.text" = "นโยบายความเป็นส่วนตัว";

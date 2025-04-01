@@ -14,7 +14,7 @@ struct MainButton {
     @ObservableState
     struct State: Equatable {
         var buttonText: String
-        @Shared(.isOnboardingPassed) var isOnboardingPassed: Bool = false
+//        @Shared(.isOnboardingPassed) var isOnboardingPassed: Bool = false
         
         
     }
@@ -40,6 +40,7 @@ struct MainButtonView: View {
             store.send(.buttonTapped)
         } label:{
             Text(store.buttonText)
+                .font(Fonts.Roboto.medium.swiftUIFont(size: 20))
                 .frame(minWidth: 0, maxWidth: 300)
                 .padding()
                 .background(Color.cyan)

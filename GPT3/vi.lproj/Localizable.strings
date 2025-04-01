@@ -1,0 +1,64 @@
+/* 
+  Localizable.strings
+  GPT3
+
+  Created by Kazimir Kozulia on 20.02.2025.
+  
+*/
+
+"continue.button.text" = "TIẾP TỤC";
+"firstOnboardingScreen.main.title" = "Hãy hỏi bất kỳ câu hỏi nào";
+"secondOnboardingScreen.main.title" = "Vui lòng \n đánh giá ứng dụng!";
+"thirdOnboardingScreen.main.title" = "Nhận được câu trả lời \n cho mọi thứ";
+"fourthOnboardingScreen.main.title" = "Tạo nội dung \n trong vài giây";
+"firstOnboardingScreen.subtitle" = "Với ChatBot, bạn có thể đơn giản hóa cuộc sống của mình bằng cách nhận được câu trả lời nhanh chóng cho các câu hỏi của bạn, nhận được những gợi ý hữu ích và hoàn thành nhiều nhiệm vụ khác nhau một cách dễ dàng.";
+"secondOnboardingScreen.subtitle" = "Chúng tôi luôn đánh giá phản hồi của bạn để cải thiện chất lượng sản phẩm của mình!";
+"thirdOnboardingScreen.subtitle" = "Ứng dụng mô hình ngôn ngữ AI của chúng tôi có thể cung cấp câu trả lời cho một loạt các chủ đề!";
+"fourthOnboardingScreen.subtitle" = "Có khả năng tạo nội dung đa dạng, công cụ của chúng tôi rất hữu ích trong nhiều ngữ cảnh và ứng dụng.";
+"firstPaywallScreen.main.title" = "Truy cập không giới hạn \n vào tất cả các tính năng";
+"firstPaywallScreen.billed.title" = "Thanh toán hàng tuần";
+"firstPaywallScreen.usd.title" = "USD";
+"firstPaywallScreen.renewable.title" = "Gia hạn tự động. Hủy bất cứ lúc nào.";
+"secondPaywallScreen.main.title" = "Mở khóa toàn bộ tính năng";
+"secondPaywallScreen.main.subtitle" = "Sử dụng không giới hạn\nTrải nghiệm không quảng cáo \n Giới hạn từ cao hơn \n Mô hình AI nâng cao";
+"secondPaywallScreen.try3Days" = "Dùng thử 3 ngày miễn phí, sau đó $0.99/tuần \n Hủy bất cứ lúc nào";
+"thirdPaywallScreen.main.title" = "Ưu đãi đặc biệt \n Mở khóa toàn bộ tính năng";
+"thirdPaywallScreen.main.subtitle" = "Nhận câu trả lời cá nhân hóa, thời gian \n xử lý nhanh hơn và hiệu suất \n được cải thiện.";
+"thirdPaywallScreen.try.button" = "Dùng thử ngay!";
+"thirdPaywallScreen.timer.title" = "Thời gian ưu đãi còn lại";
+"thirdPaywallScreen.oldPrice.button" = "Giá cũ $49.99";
+"thirdPaywallScreen.getOptions.button" = "Nhận tất cả tính năng với $19.99/năm";
+"firstPaywallButton.titile" = "Hàng tuần";
+"secondPaywallButton.titile" = "Hàng tháng";
+"thirdPaywallButton.titile" = "Hàng năm";
+"mainScreen.main.title" = "Thiên Tài Nói";
+"mainScreen.title" = "Lời nhắc sẵn có";
+"new.chat.button.text" = "TRÒ CHUYỆN MỚI";
+"chat.history.button.text" = "LỊCH SỬ TRÒ CHUYỆN";
+"terms.of.use.button.text" = "ĐIỀU KHOẢN SỬ DỤNG";
+"privacy.policy.button.text" = "CHÍNH SÁCH RIÊNG TƯ";
+"chat.send.message.text.field" = "Gửi tin nhắn...";
+"settings.back.button.title" = "Cài đặt";
+"free.premium.title" = "Gói premium miễn phí 3 ngày \n của bạn chưa \n được yêu cầu.";
+"free.premium.button.text" = "Nhấn để yêu cầu";
+"first.scroll.button.title" = "Hãy kể cho tôi một";
+"first.scroll.button.subtitle" = "câu đùa";
+"second.scroll.button.title" = "Hãy đưa cho tôi một";
+"second.scroll.button.subtitle" = "công thức";
+"third.scroll.button.title" = "Hãy viết cho tôi một";
+"third.scroll.button.subtitle" = "mã nguồn";
+"fourth.scroll.button.title" = "Hãy viết cho tôi một";
+"fourth.scroll.button.subtitle" = "bài hát";
+"fifth.scroll.button.title" = "Hãy viết cho tôi một";
+"fifth.scroll.button.subtitle" = "email";
+"sixth.scroll.button.title" = "Tóm tắt";
+"sixth.scroll.button.subtitle" = "văn bản";
+"seventh.scroll.button.title" = "Hãy viết cho tôi một";
+"seventh.scroll.button.subtitle" = "bài thơ";
+"eighth.scroll.button.title" = "Hãy viết cho tôi một";
+"eighth.scroll.button.subtitle" = "luận văn";
+"ninth.scroll.button.title" = "Khoa học";
+"ninth.scroll.button.subtitle" = "câu hỏi";
+"bottomButton.terms.text" = "Điều khoản dịch vụ";
+"bottomButton.restore.text" = "Phục hồi";
+"bottomButton.privacy.text" = "Chính sách bảo mật";

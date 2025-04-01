@@ -1,0 +1,64 @@
+/* 
+  Localizable.strings
+  GPT3
+
+  Created by Kazimir Kozulia on 20.02.2025.
+  
+*/
+
+"continue.button.text" = "繼續";
+"firstOnboardingScreen.main.title" = "隨時提問";
+"secondOnboardingScreen.main.title" = "請 \n 評價應用程式!";
+"thirdOnboardingScreen.main.title" = "獲取答案 \n 隨時隨地";
+"fourthOnboardingScreen.main.title" = "在幾秒鐘內生成內容";
+"firstOnboardingScreen.subtitle" = "使用ChatBot，你可以通過快速回答你的問題、接收有幫助的建議並輕鬆完成各種任務來簡化你的生活.";
+"secondOnboardingScreen.subtitle" = "我們隨時評估你的反饋以提高產品質量!";
+"thirdOnboardingScreen.subtitle" = "我們的AI語言模型應用程序可以提供廣泛主題的答案!";
+"fourthOnboardingScreen.subtitle" = "能夠生成多樣內容，我們的工具在多種情境和應用中都非常有用.";
+"firstPaywallScreen.main.title" = "無限訪問 \n 所有功能";
+"firstPaywallScreen.billed.title" = "每周收费";
+"firstPaywallScreen.usd.title" = "美元";
+"firstPaywallScreen.renewable.title" = "自动续费。随时可取消。";
+"secondPaywallScreen.main.title" = "获取完整权限";
+"secondPaywallScreen.main.subtitle" = "无限使用 \n 无广告体验 \n 更高字数限制 \n 高级AI模型";
+"secondPaywallScreen.try3Days" = "免费试用3天，之后每周$0.99 \n 随时取消";
+"thirdPaywallScreen.main.title" = "限时优惠 \n 获取完整权限";
+"thirdPaywallScreen.main.subtitle" = "获得个性化回答，更快 \n 处理速度，以及更强 \n 性能体验。";
+"thirdPaywallScreen.try.button" = "立即试用！";
+"thirdPaywallScreen.timer.title" = "优惠截止剩余时间";
+"thirdPaywallScreen.oldPrice.button" = "原价$49.99";
+"thirdPaywallScreen.getOptions.button" = "全年套餐仅需$19.99/年";
+"firstPaywallButton.titile" = "每周";
+"secondPaywallButton.titile" = "每月";
+"thirdPaywallButton.titile" = "每年";
+"mainScreen.main.title" = "说天才";
+"mainScreen.title" = "準備好的提示";
+"new.chat.button.text" = "新對話";
+"chat.history.button.text" = "聊天記錄";
+"terms.of.use.button.text" = "使用條款";
+"privacy.policy.button.text" = "隱私政策";
+"chat.send.message.text.field" = "發送消息...";
+"settings.back.button.title" = "設置";
+"free.premium.title" = "您免費的3天 \n 保貴會員資格還未 \n 被索取";
+"free.premium.button.text" = "點擊索取";
+"first.scroll.button.title" = "講個";
+"first.scroll.button.subtitle" = "笑話";
+"second.scroll.button.title" = "給我";
+"second.scroll.button.subtitle" = "食譜";
+"third.scroll.button.title" = "寫段";
+"third.scroll.button.subtitle" = "代碼";
+"fourth.scroll.button.title" = "寫首";
+"fourth.scroll.button.subtitle" = "歌";
+"fifth.scroll.button.title" = "寫信給我";
+"fifth.scroll.button.subtitle" = "電子郵件";
+"sixth.scroll.button.title" = "總結";
+"sixth.scroll.button.subtitle" = "文字";
+"seventh.scroll.button.title" = "寫首";
+"seventh.scroll.button.subtitle" = "詩";
+"eighth.scroll.button.title" = "寫篇文章給我";
+"eighth.scroll.button.subtitle" = "論文";
+"ninth.scroll.button.title" = "科學";
+"ninth.scroll.button.subtitle" = "問題";
+"bottomButton.terms.text" = "服務條款";
+"bottomButton.restore.text" = "恢復";
+"bottomButton.privacy.text" = "隱私政策";

@@ -1,0 +1,64 @@
+/* 
+  Localizable.strings
+  GPT3
+
+  Created by Kazimir Kozulia on 20.02.2025.
+  
+*/
+
+"continue.button.text" = "WEITER";
+"firstOnboardingScreen.main.title" = "Stelle beliebige Fragen";
+"secondOnboardingScreen.main.title" = "Bitte \n bewerte die App!";
+"thirdOnboardingScreen.main.title" = "Erhalte Antworten \n für alles";
+"fourthOnboardingScreen.main.title" = "Generiert Inhalte \n innerhalb von Sekunden";
+"firstOnboardingScreen.subtitle" = "Mit ChatBot kannst du dein Leben vereinfachen, indem du schnelle Antworten auf deine Anfragen erhältst, nützliche Vorschläge bekommst und eine Vielzahl von Aufgaben leicht erledigen kannst.";
+"secondOnboardingScreen.subtitle" = "Wir bewerten dein Feedback stets, um die Qualität unseres Produkts zu verbessern!";
+"thirdOnboardingScreen.subtitle" = "Unsere KI-Sprachmodell-App kann Antworten zu einer breiten Palette an Themen bereitstellen!";
+"fourthOnboardingScreen.subtitle" = "In der Lage, verschiedene Inhalte zu generieren, ist unser Tool in verschiedenen Kontexten und Anwendungen nützlich.";
+"firstPaywallScreen.main.title" = "Unbegrenzter \n Vollzugriff \n auf alle Funktionen";
+"firstPaywallScreen.billed.title" = "Wöchentliche Zahlung";
+"firstPaywallScreen.usd.title" = "USD";
+"firstPaywallScreen.renewable.title" = "Automatische Verlängerung. Jederzeit kündbar.";
+"secondPaywallScreen.main.title" = "Vollzugriff erhalten";
+"secondPaywallScreen.main.subtitle" = "Unbegrenzte Nutzung \n Werbefreie Erfahrung \n Höhere Wortanzahl \n Fortgeschrittenes KI-Modell";
+"secondPaywallScreen.try3Days" = "3 Tage kostenlos testen, dann 0,99$/Woche \n Jederzeit kündbar";
+"thirdPaywallScreen.main.title" = "Sonderangebot \n Vollzugriff erhalten";
+"thirdPaywallScreen.main.subtitle" = "Erhalten Sie personalisierte Antworten, schnellere \n Verarbeitungszeiten und verbesserte \n Leistung.";
+"thirdPaywallScreen.try.button" = "Jetzt testen!";
+"thirdPaywallScreen.timer.title" = "Verbleibende Zeit des Angebots";
+"thirdPaywallScreen.oldPrice.button" = "Alter Preis 49,99$";
+"thirdPaywallScreen.getOptions.button" = "Alle Optionen für 19,99$/Jahr";
+"firstPaywallButton.titile" = "Wöchentlich";
+"secondPaywallButton.titile" = "Monatlich";
+"thirdPaywallButton.titile" = "Jährlich";
+"mainScreen.main.title" = "SprachGenie";
+"mainScreen.title" = "Bereite Aufforderungen vor";
+"new.chat.button.text" = "NEUES CHAT";
+"chat.history.button.text" = "CHAT-VERLAUF";
+"terms.of.use.button.text" = "NUTZUNGSBEDINGUNGEN";
+"privacy.policy.button.text" = "DATENSCHUTZRICHTLINIE";
+"chat.send.message.text.field" = "Senden Sie eine Nachricht...";
+"settings.back.button.title" = "Einstellungen";
+"free.premium.title" = "Dein免费 3-Tage- \n Premium wurde noch nicht \n beansprucht.";
+"free.premium.button.text" = "Tippen Sie zum Anspruch";
+"first.scroll.button.title" = "Erzähl mir einen";
+"first.scroll.button.subtitle" = "Witz";
+"second.scroll.button.title" = "Gib mir einen";
+"second.scroll.button.subtitle" = "Rezept";
+"third.scroll.button.title" = "Schreibe einen";
+"third.scroll.button.subtitle" = "Code";
+"fourth.scroll.button.title" = "Schreibe einen";
+"fourth.scroll.button.subtitle" = "Song";
+"fifth.scroll.button.title" = "Schreibe mir eine";
+"fifth.scroll.button.subtitle" = "E-Mail";
+"sixth.scroll.button.title" = "Fasse zusammen";
+"sixth.scroll.button.subtitle" = "Text";
+"seventh.scroll.button.title" = "Schreibe einen";
+"seventh.scroll.button.subtitle" = "Gedicht";
+"eighth.scroll.button.title" = "Schreibe mir einen";
+"eighth.scroll.button.subtitle" = "Essay";
+"ninth.scroll.button.title" = "Wissenschaft";
+"ninth.scroll.button.subtitle" = "Frage";
+"bottomButton.terms.text" = "Nutzungsbedingungen";
+"bottomButton.restore.text" = "Wiederherstellen";
+"bottomButton.privacy.text" = "Datenschutzerklärung";

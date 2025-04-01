@@ -33,7 +33,7 @@ struct SettingButtonView: View {
     let store: StoreOf<SettingButton>
     var body: some View {
         Button{
-            
+            store.send(.buttonTapped)
         } label:{
             Image(.settingGear)
             

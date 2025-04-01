@@ -1,0 +1,64 @@
+/* 
+  Localizable.strings
+  GPT3
+
+  Created by Kazimir Kozulia on 20.02.2025.
+  
+*/
+
+"continue.button.text" = "CONTINUER";
+"firstOnboardingScreen.main.title" = "Posez des questions";
+"secondOnboardingScreen.main.title" = "Veuillez \n évaluer l'application !";
+"thirdOnboardingScreen.main.title" = "Obtenez des réponses \n pour tout";
+"fourthOnboardingScreen.main.title" = "Génère du contenu \n en quelques secondes";
+"firstOnboardingScreen.subtitle" = "Avec ChatBot, vous pouvez simplifier votre vie en recevant des réponses rapides à vos questions, en recevant des suggestions utiles et en accomplissant facilement une variété de tâches.";
+"secondOnboardingScreen.subtitle" = "Nous évaluons constamment vos retours pour améliorer la qualité de notre produit !";
+"thirdOnboardingScreen.subtitle" = "Notre application de modèle linguistique IA peut fournir des réponses sur une large gamme de sujets !";
+"fourthOnboardingScreen.subtitle" = "Capable de générer divers contenus, notre outil est utile dans de multiples contextes et applications.";
+"firstPaywallScreen.main.title" = "Accès illimité \n à toutes les fonctionnalités";
+"firstPaywallScreen.billed.title" = "Facturé hebdomadairement à";
+"firstPaywallScreen.usd.title" = "USD";
+"firstPaywallScreen.renewable.title" = "Renouvellement automatique. Annulez à tout moment.";
+"secondPaywallScreen.main.title" = "Accédez à la version complète";
+"secondPaywallScreen.main.subtitle" = "Utilisation illimitée \n Expérience sans publicité \n Nombre de mots supérieur \n Modèle IA avancé";
+"secondPaywallScreen.try3Days" = "Essayez 3 jours gratuitement, puis 0.99€/semaine \n Annulation possible à tout moment";
+"thirdPaywallScreen.main.title" = "Offre spéciale \n Accédez à la version complète";
+"thirdPaywallScreen.main.subtitle" = "Obtenez des réponses personnalisées, des temps \n de traitement plus rapides et des \n performances améliorées.";
+"thirdPaywallScreen.try.button" = "Essayez dès maintenant !";
+"thirdPaywallScreen.timer.title" = "Temps restant jusqu'à la fin de l'offre";
+"thirdPaywallScreen.oldPrice.button" = "Ancien prix 49.99€";
+"thirdPaywallScreen.getOptions.button" = "Obtenez toutes les options 19.99€/an";
+"firstPaywallButton.titile" = "Hebdomadaire";
+"secondPaywallButton.titile" = "Mensuel";
+"thirdPaywallButton.titile" = "Annuel";
+"mainScreen.main.title" = "Génie Parlant";
+"mainScreen.title" = "Prompts prêts à l'emploi";
+"new.chat.button.text" = "NOUVELLE DISCUSSION";
+"chat.history.button.text" = "HISTORIQUE DE DISCUSSION";
+"terms.of.use.button.text" = "CONDITIONS D'UTILISATION";
+"privacy.policy.button.text" = "POLITIQUE DE CONFIDENTIALITÉ";
+"chat.send.message.text.field" = "Envoyer un message...";
+"settings.back.button.title" = "Paramètres";
+"free.premium.title" = "Votre accès premium gratuit de 3 jours \n n'a pas encore été revendiqué.";
+"free.premium.button.text" = "Appuyez pour revendiquer";
+"first.scroll.button.title" = "Raconte-moi une";
+"first.scroll.button.subtitle" = "blague";
+"second.scroll.button.title" = "Donne-moi une";
+"second.scroll.button.subtitle" = "recette";
+"third.scroll.button.title" = "Écris un";
+"third.scroll.button.subtitle" = "code";
+"fourth.scroll.button.title" = "Écris un";
+"fourth.scroll.button.subtitle" = "chant";
+"fifth.scroll.button.title" = "Écris-moi un";
+"fifth.scroll.button.subtitle" = "E-mail";
+"sixth.scroll.button.title" = "Résume";
+"sixth.scroll.button.subtitle" = "du texte";
+"seventh.scroll.button.title" = "Écris un";
+"seventh.scroll.button.subtitle" = "poème";
+"eighth.scroll.button.title" = "Écris-moi un";
+"eighth.scroll.button.subtitle" = "Essai";
+"ninth.scroll.button.title" = "Science";
+"ninth.scroll.button.subtitle" = "Question";
+"bottomButton.terms.text" = "Conditions d'utilisation";
+"bottomButton.restore.text" = "Restaurer";
+"bottomButton.privacy.text" = "Politique de confidentialité";

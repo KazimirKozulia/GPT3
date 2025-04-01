@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  GPT3
+
+  Created by Kazimir Kozulia on 20.02.2025.
+  
+*/
+
+"continue.button.text" = "जारी रखें";
+"firstOnboardingScreen.main.title" = "किसी भी प्रश्न करें";
+"secondOnboardingScreen.main.title" = "कृपया \n ऐप का मूल्यांकन करें!";
+"thirdOnboardingScreen.main.title" = "सभी के लिए जवाब प्राप्त करें";
+"fourthOnboardingScreen.main.title" = "कुछ ही सेकंडों में कंटेंट बनाएँ";
+"firstOnboardingScreen.subtitle" = "ChatBot का उपयोग करके, आप अपने जीवन को सरल बना सकते हैं, अपने प्रश्नों के जवाब तेजी से प्राप्त करें, उपयोगी सुझाव प्राप्त करें और विविध कार्यों को आसानी से पूरा करें।";
+"secondOnboardingScreen.subtitle" = "हम हमेशा आपकी प्रतिक्रिया का मूल्यांकन करते हैं ताकि हमारा उत्पाद बेहतर बन सके!";
+"thirdOnboardingScreen.subtitle" = "हमारा AI भाषा मॉडल ऐप विविध विषयों पर जवाब प्रदान कर सकता है!";
+"fourthOnboardingScreen.subtitle" = "विविध कंटेंट बनाने की क्षमता रखता है, हमारा टूल विविध संदर्भों और ऐप्लिकेशनों में बहुत उपयोगी है।";
+"firstPaywallScreen.main.title" = "सभी सुविधाओं पर अनियंत्रित एक्सेस";
+"firstPaywallScreen.billed.title" = "साप्ताहिक भुगतान";
+"firstPaywallScreen.usd.title" = "अमेरिकी डॉलर";
+"firstPaywallScreen.renewable.title" = "स्वतः नवीनीकरण। कभी भी रद्द कर सकते हैं।";
+"secondPaywallScreen.main.title" = "पूर्ण एक्सेस प्राप्त करें";
+"secondPaywallScreen.main.subtitle" = "असीमित उपयोग \n विज्ञापन-मुक्त अनुभव \n अधिक शब्द सीमा \n उन्नत AI मॉडल";
+"secondPaywallScreen.try3Days" = "3 दिन निःशुल्क आज़माएं, फिर $0.99/सप्ताह \n किसी भी समय रद्द कर सकते हैं";
+"thirdPaywallScreen.main.title" = "आपके लिए विशेष ऑफर\nपूर्ण एक्सेस प्राप्त करें";
+"thirdPaywallScreen.main.subtitle" = "व्यक्तिगत प्रतिक्रियाएं प्राप्त करें, तेज\nप्रसंस्करण समय, और बेहतर \n प्रदर्शन।";
+"thirdPaywallScreen.try.button" = "आज ही आज़माएं!";
+"thirdPaywallScreen.timer.title" = "ऑफर समाप्त होने में शेष समय";
+"thirdPaywallScreen.oldPrice.button" = "पुरानी कीमत $49.99";
+"thirdPaywallScreen.getOptions.button" = "सभी विकल्प $19.99/वर्ष में प्राप्त करें";
+"firstPaywallButton.titile" = "साप्ताहिक";
+"secondPaywallButton.titile" = "मासिक";
+"thirdPaywallButton.titile" = "वार्षिक";
+"mainScreen.main.title" = "स्पीकजीनियस";
+"mainScreen.title" = "तैयार प्रोम्प्ट्स";
+"new.chat.button.text" = "नई चैट";
+"chat.history.button.text" = "चैट इतिहास";
+"terms.of.use.button.text" = "उपयोग की शर्तें";
+"privacy.policy.button.text" = "गोपनीयता नीति";
+"chat.send.message.text.field" = "संदेश भेजें...";
+"settings.back.button.title" = "सेटिंग्स";
+"free.premium.title" = "आपका मुफ्त 3-दिवसीय \n प्रीमियम अभी तक \n दावा नहीं किया गया।";
+"free.premium.button.text" = "दावा करने के लिए छूएँ";
+"first.scroll.button.title" = "मुझे एक";
+"first.scroll.button.subtitle" = "मजाक बताएँ";
+"second.scroll.button.title" = "मुझे एक";
+"second.scroll.button.subtitle" = "रेसिपी दें";
+"third.scroll.button.title" = "एक";
+"third.scroll.button.subtitle" = "कोड लिखें";
+"fourth.scroll.button.title" = "एक";
+"fourth.scroll.button.subtitle" = "गाना लिखें";
+"fifth.scroll.button.title" = "मुझे एक ईमेल लिखें";
+"fifth.scroll.button.subtitle" = "";
+"sixth.scroll.button.title" = "सारांश";
+"sixth.scroll.button.subtitle" = "पाठ";
+"seventh.scroll.button.title" = "एक कविता लिखें";
+"seventh.scroll.button.subtitle" = "";
+"eighth.scroll.button.title" = "मुझे एक निबंध लिखें";
+"eighth.scroll.button.subtitle" = "";
+"ninth.scroll.button.title" = "विज्ञान";
+"ninth.scroll.button.subtitle" = "प्रश्न";
+"bottomButton.terms.text" = "सेवा की शर्तें";
+"bottomButton.restore.text" = "बहाल करें";
+"bottomButton.privacy.text" = "गोपनीयता नीति";
+

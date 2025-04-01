@@ -1,0 +1,64 @@
+/* 
+  Localizable.strings
+  GPT3
+
+  Created by Kazimir Kozulia on 20.02.2025.
+  
+*/
+
+"continue.button.text" = "계속하기";
+"firstOnboardingScreen.main.title" = "아무 질문이나 해보세요";
+"secondOnboardingScreen.main.title" = "앱을 \n 평가해 주세요!";
+"thirdOnboardingScreen.main.title" = "모든 것에 대한 \n 답변을 얻으세요";
+"fourthOnboardingScreen.main.title" = "몇 초 안에 콘텐츠 생성";
+"firstOnboardingScreen.subtitle" = "ChatBot을 사용하면 빠르게 답변을 받거나 유용한 제안을 받고 다양한 작업을 쉽게 완료할 수 있습니다.";
+"secondOnboardingScreen.subtitle" = "우리는 항상 제품 품질 향상을 위해 귀하의 피드백을 평가합니다!";
+"thirdOnboardingScreen.subtitle" = "AI 언어 모델 앱은 다양한 주제에 대한 답변을 제공할 수 있습니다!";
+"fourthOnboardingScreen.subtitle" = "다양한 콘텐츠를 생성할 수 있는 우리의 도구는 여러 컨텍스트와 애플리케이션에서 매우 유용합니다.";
+"firstPaywallScreen.main.title" = "모든 기능에 대한 \n 무제한 접근";
+"firstPaywallScreen.billed.title" = "매주 결제";
+"firstPaywallScreen.usd.title" = "USD";
+"firstPaywallScreen.renewable.title" = "자동 갱신. 언제든지 취소 가능.";
+"secondPaywallScreen.main.title" = "전체 기능 이용하기";
+"secondPaywallScreen.main.subtitle" = "무제한 사용 \n 광고 없는 경험 \n 더 많은 단어 사용 가능 \n 고급 AI 모델";
+"secondPaywallScreen.try3Days" = "3일 무료 체험 후 주당 $0.99 \n 언제든지 취소 가능";
+"thirdPaywallScreen.main.title" = "특별 제안 \n 전체 기능 이용하기";
+"thirdPaywallScreen.main.subtitle" = "맞춤형 응답, 더 빠른 \n 처리 속도, 향상된 \n 성능을 경험하세요.";
+"thirdPaywallScreen.try.button" = "지금 바로 체험해보세요!";
+"thirdPaywallScreen.timer.title" = "제안 종료까지 남은 시간";
+"thirdPaywallScreen.oldPrice.button" = "기존 가격 $49.99";
+"thirdPaywallScreen.getOptions.button" = "모든 기능 연간 $19.99에 이용";
+"firstPaywallButton.titile" = "매주";
+"secondPaywallButton.titile" = "매월";
+"thirdPaywallButton.titile" = "매년";
+"mainScreen.main.title" = "스피크지니어스"; 
+"mainScreen.title" = "준비된 프롬프트";
+"new.chat.button.text" = "새로운 대화";
+"chat.history.button.text" = "대화 기록";
+"terms.of.use.button.text" = "이용 약관";
+"privacy.policy.button.text" = "개인정보 보호 정책";
+"chat.send.message.text.field" = "메시지 보내기...";
+"settings.back.button.title" = "설정";
+"free.premium.title" = "당신의 무료 3일간의 \n 프리미엄 아직 \n 청구되지 않았습니다.";
+"free.premium.button.text" = "청구하려면 탭";
+"first.scroll.button.title" = "재미있는 이야기를";
+"first.scroll.button.subtitle" = "들려줘";
+"second.scroll.button.title" = "레시피를";
+"second.scroll.button.subtitle" = "주세요";
+"third.scroll.button.title" = "코드를";
+"third.scroll.button.subtitle" = "작성해줘";
+"fourth.scroll.button.title" = "노래를";
+"fourth.scroll.button.subtitle" = "작성해줘";
+"fifth.scroll.button.title" = "이메일을 작성해줘";
+"fifth.scroll.button.subtitle" = "";
+"sixth.scroll.button.title" = "요약";
+"sixth.scroll.button.subtitle" = "텍스트";
+"seventh.scroll.button.title" = "시를";
+"seventh.scroll.button.subtitle" = "작성해줘";
+"eighth.scroll.button.title" = "에세이를 작성해줘";
+"eighth.scroll.button.subtitle" = "";
+"ninth.scroll.button.title" = "과학";
+"ninth.scroll.button.subtitle" = "질문";
+"bottomButton.terms.text" = "서비스 이용 약관";
+"bottomButton.restore.text" = "복원";
+"bottomButton.privacy.text" = "개인정보 보호 정책";

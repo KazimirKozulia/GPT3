@@ -38,6 +38,7 @@ struct SettingBottomButtonsView: View {
                 
             } label:{
                 Text(store.buttonsText)
+                    .font(Fonts.Roboto.medium.swiftUIFont(size: 18))
                     .foregroundStyle(Color.mainText)
                     .frame(minWidth: 0, maxWidth: 300)
                     .padding()

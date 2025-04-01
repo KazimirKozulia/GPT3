@@ -1,0 +1,64 @@
+/* 
+  Localizable.strings
+  GPT3
+
+  Created by Kazimir Kozulia on 20.02.2025.
+  
+*/
+
+"continue.button.text" = "CONTINUE";
+"firstOnboardingScreen.main.title" = "Ask any questions";
+"secondOnboardingScreen.main.title" = "Please \n Rate the App!";
+"thirdOnboardingScreen.main.title" = "Get Answers \n for Anything";
+"fourthOnboardingScreen.main.title" = "Generates content \n within seconds";
+"firstOnboardingScreen.subtitle" = "With ChatBot, you can simplify your life by receving quick responses to you inquiries, receving helpful suggestion, and accomplishing a variety of tasks with ease.";
+"secondOnboardingScreen.subtitle" = "At all times, we assess your feedback to enhance the quality of our product!";
+"thirdOnboardingScreen.subtitle" = "Our AI Language model app can supply answers to a vast array of topics!";
+"fourthOnboardingScreen.subtitle" = "Capable of generating diverse content, our tool is useful in multiple context and applications.";
+"firstPaywallScreen.main.title" = "Unlimited \n Full Accesss to \n All Features";
+"firstPaywallScreen.billed.title" = "Billed weekly at";
+"firstPaywallScreen.usd.title" = "USD";
+"firstPaywallScreen.renewable.title" = "Auto-renewable.Cancel any time.";
+"secondPaywallScreen.main.title" = "Get Full Access";
+"secondPaywallScreen.main.subtitle" = "Unlimited Usage \n Ads free expiriens \n Higher word counts \n Adwanced AI model";
+"secondPaywallScreen.try3Days" = "Try 3 days for free, then $0.99/Week \n Cancel anytime";
+"thirdPaywallScreen.main.title" = "Offer for you \n Get Full Access";
+"thirdPaywallScreen.main.subtitle" = "Get personalized responses, faster \n processing times, and enhanced \n performance.";
+"thirdPaywallScreen.try.button" = "Try it out today!";
+"thirdPaywallScreen.timer.title" = "Until the end of the offer left";
+"thirdPaywallScreen.oldPrice.button" = "Old price $49.99";
+"thirdPaywallScreen.getOptions.button" = "Get all options $19.99/year";
+"firstPaywallButton.titile" = "Weekly";
+"secondPaywallButton.titile" = "Monthly";
+"thirdPaywallButton.titile" = "Yearly";
+"mainScreen.main.title" = "SpeakGenius";
+"mainScreen.title" = "Ready prompts";
+"new.chat.button.text" = "NEW CHAT";
+"chat.history.button.text" = "CHAT HISTORY";
+"terms.of.use.button.text" = "TERMS OF USE";
+"privacy.policy.button.text" = "PRIVACY POLICY";
+"chat.send.message.text.field" = "Send a message...";
+"settings.back.button.title" = "Settings";
+"free.premium.title" = "You free 3-day \n premium hasn't \n been claimed yet.";
+"free.premium.button.text" = "Tap to claim";
+"first.scroll.button.title" = "Tell me a";
+"first.scroll.button.subtitle" = "joke";
+"second.scroll.button.title" = "Give me";
+"second.scroll.button.subtitle" = "recipe";
+"third.scroll.button.title" = "Write a";
+"third.scroll.button.subtitle" = "code";
+"fourth.scroll.button.title" = "Write a";
+"fourth.scroll.button.subtitle" = "song";
+"fifth.scroll.button.title" = "Write me an";
+"fifth.scroll.button.subtitle" = "Email";
+"sixth.scroll.button.title" = "Summarize";
+"sixth.scroll.button.subtitle" = "text";
+"seventh.scroll.button.title" = "Write a";
+"seventh.scroll.button.subtitle" = "Poem";
+"eighth.scroll.button.title" =  "Write me an";
+"eighth.scroll.button.subtitle" = "Essay";
+"ninth.scroll.button.title" = "Science";
+"ninth.scroll.button.subtitle" = "Question";
+"bottomButton.terms.text" = "Terms of Service";
+"bottomButton.restore.text" = "Restore";
+"bottomButton.privacy.text" = "Privacy Policy";

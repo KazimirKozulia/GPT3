@@ -14,10 +14,10 @@ struct Setting {
     @ObservableState
     struct State: Equatable {
         var backSettingButton = BackSettingButton.State()
-        var newChatButtons = SettingChatButton.State(buttonsText: "NEW CHAT")
-        var chatHistoryButtons = SettingChatButton.State(buttonsText: "CHAT HISTORY")
-        var termsButton = SettingBottomButtons.State(buttonsText: "TERMS OF USE")
-        var privacyButton = SettingBottomButtons.State(buttonsText: "PRIVACY POLICY")
+        var newChatButtons = SettingChatButton.State(buttonsText: Localizable.New.Chat.Button.text)
+        var chatHistoryButtons = SettingChatButton.State(buttonsText: Localizable.Chat.History.Button.text)
+        var termsButton = SettingBottomButtons.State(buttonsText: Localizable.Terms.Of.Use.Button.text)
+        var privacyButton = SettingBottomButtons.State(buttonsText: Localizable.Privacy.Policy.Button.text)
     }
     
     enum Action {
@@ -47,8 +47,9 @@ struct SettingScreen: View {
             HStack{
                 BackSettingButtonView(store: store.scope(state: \.backSettingButton, action: \.backSettingButton))
                 
-                Text("Settings")
+                Text(Localizable.Settings.Back.Button.title)
                     .foregroundStyle(.backButtonSetting)
+                    .font(Fonts.Roboto.regular.swiftUIFont(size: 18))
                 
                 Spacer()
                 
@@ -62,12 +63,14 @@ struct SettingScreen: View {
                     .padding(.horizontal, 20)
                 HStack {
                     VStack{
-                        Text("You free 3-day \n premium hasn't \n been claimed yet.")
+                        Text(Localizable.Free.Premium.title)
                             .foregroundStyle(.white)
                             .padding(.leading, 30)
+                            .font(Fonts.Roboto.light.swiftUIFont(size: 15))
                         
                         Button{
-                        } label: { Text("Tap to claim")}
+                        } label: { Text(Localizable.Free.Premium.Button.text)}
+                            .font(Fonts.Roboto.light.swiftUIFont(size: 16))
                         .foregroundStyle(.indigo)
                         .background(Color.yellow)
                         .cornerRadius(20)
@@ -93,7 +96,7 @@ struct SettingScreen: View {
             SettingBottomButtonsView (store: store.scope(state: \.termsButton, action: \.bottomButtons ))
             
             SettingBottomButtonsView (store: store.scope(state: \.privacyButton, action: \.bottomButtons ))
-        }  .containerRelativeFrame([.horizontal, .vertical])
+        } 
             .background(.mainBackground)
     }
 }

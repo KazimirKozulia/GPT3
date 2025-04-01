@@ -33,7 +33,7 @@ struct BackSettingButtonView: View {
     let store: StoreOf<BackSettingButton>
     var body: some View {
         Button{
-            
+            store.send(.buttonTapped)
         } label:{
             Image(.backSetting)
             

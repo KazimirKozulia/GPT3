@@ -7,15 +7,9 @@
 import SwiftUI
 import ComposableArchitecture
 
-extension String {
-    var localizable: String {
-        return NSLocalizedString(self, comment: "")
-    }
-}
-
-//extension PersistenceReaderKey where Self == InMemoryKey<GeneralPaywall> {
-//    static var generalPaywall: Self {
-//        inMemory("generalPaywall")
+//extension SharedKey where Self == AppStorageKey<Bool> {
+//    static var isOnboardingPassed: Self {
+//        appStorage("isOnboardingPassed")
 //    }
 //}
 
@@ -23,12 +17,10 @@ extension SharedKey where Self == AppStorageKey<Bool> {
     static var isOnboardingPassed: Self {
         appStorage("isOnboardingPassed")
     }
+}
 
-    static var isATTEnabled: Self {
-        appStorage("isATTEnabled")
-    }
-
-    static var isPushSetuped: Self {
-        appStorage("isPushSetuped")
+extension SharedKey where Self == InMemoryKey<GeneralPaywall> {
+    static var generalPaywall: Self {
+        inMemory("generalPaywall")
     }
 }

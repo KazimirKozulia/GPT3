@@ -66,8 +66,9 @@ struct ChatScreen: View {
                     
                     Spacer()
                     
-                    Text("SpeakGenius")
+                    Text(Localizable.MainScreen.Main.title)
                         .foregroundStyle(.mainText)
+                        .font(Fonts.Roboto.regular.swiftUIFont(size: 20))
                     
                     Spacer()
                     
@@ -106,7 +107,7 @@ struct ChatScreen: View {
                 }
                 ZStack(alignment: .trailing){
                     HStack {
-                        TextField("Send a message...", text: viewStore.binding(
+                        TextField(Localizable.Chat.Send.Message.Text.field, text: viewStore.binding(
                             get: \.newMessageText,
                             send: Chat.Action.newMessageTextChanged
                         ))

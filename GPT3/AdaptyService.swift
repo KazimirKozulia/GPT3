@@ -45,16 +45,14 @@
 //    }
 //}
 
-//struct GeneralPaywall: Equatable {
-//    let placementsId: [String]
-//    let globalSettings: [String:Any]
-//    
-//    init(data: [String: Any]) {
-//        self.placementsId = data["placementsId"] as? [String] ?? []
-//        self.globalSettings = data["global_settings"] as? [String: Any] ?? [:]
-//    }
-//    
-//    static func ==(lhs: GeneralPaywall, rhs: GeneralPaywall) -> Bool {
-//        return lhs.placementsId == rhs.placementsId && lhs.globalSettings.isEqual(to: rhs.globalSettings)
-//    }
-//}
+
+struct GeneralPaywall {
+    let placementsId: [String]
+    let globalSettings: [String:Any]
+
+    init(data: [String: Any]) {
+        self.placementsId = data["placementsId"] as? [String] ?? []
+        self.globalSettings = data["global_settings"] as? [String: Any] ?? [:]
+    }
+
+}

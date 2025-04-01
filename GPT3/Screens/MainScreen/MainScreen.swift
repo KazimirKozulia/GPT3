@@ -32,15 +32,15 @@ struct Main {
                 return .none
             case .onAppear:
                 let buttons = [
-                    ("Tell me a", "joke"),
-                    ("Give me", "recipe"),
-                    ("Write a", "code"),
-                    ("Write a", "song"),
-                    ("Write me an", "Email"),
-                    ("Summarize", "text"),
-                    ("Write a", "Poem"),
-                    ("Write me an", "Essay"),
-                    ("Science", "Question")
+                    (Localizable.First.Scroll.Button.title, Localizable.First.Scroll.Button.subtitle),
+                    (Localizable.Second.Scroll.Button.title, Localizable.Second.Scroll.Button.subtitle),
+                    (Localizable.Third.Scroll.Button.title, Localizable.Third.Scroll.Button.subtitle),
+                    (Localizable.Fourth.Scroll.Button.title, Localizable.Fourth.Scroll.Button.subtitle),
+                    (Localizable.Fifth.Scroll.Button.title, Localizable.Fifth.Scroll.Button.subtitle),
+                    (Localizable.Sixth.Scroll.Button.title, Localizable.Sixth.Scroll.Button.subtitle),
+                    (Localizable.Seventh.Scroll.Button.title, Localizable.Seventh.Scroll.Button.subtitle),
+                    (Localizable.Eighth.Scroll.Button.title, Localizable.Eighth.Scroll.Button.subtitle),
+                    (Localizable.Ninth.Scroll.Button.title, Localizable.Ninth.Scroll.Button.subtitle)
                 ]
                 state.scrollButtons = IdentifiedArray(uniqueElements: buttons.map{
                     ScrollButtons.State(id: UUID(), topButtonsText: "\($0.0)", buttonsText: "\($0.1)")
@@ -63,7 +63,8 @@ struct MainScreen: View {
 
                 Spacer()
                 
-                Text("SpeakGenius")
+                Text(Localizable.MainScreen.Main.title)
+                    .font(Fonts.Roboto.regular.swiftUIFont(size: 20))
                     .foregroundStyle(.mainText)
                 
                 Spacer()
@@ -78,7 +79,8 @@ struct MainScreen: View {
             
             Spacer()
             
-            Text("Ready prompts")
+            Text(Localizable.MainScreen.title)
+                .font(Fonts.Roboto.regular.swiftUIFont(size: 18))
                 .foregroundStyle(.indigo)
             
             ScrollView(.horizontal){

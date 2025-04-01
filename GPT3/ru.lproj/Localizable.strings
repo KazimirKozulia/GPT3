@@ -1,0 +1,63 @@
+/* 
+  Localizable.strings
+  GPT3
+
+  Created by Kazimir Kozulia on 20.02.2025.
+  
+*/
+"continue.button.text" = "ПРОДОЛЖИТЬ";
+"firstOnboardingScreen.main.title" = "Задавайте любые вопросы";
+"secondOnboardingScreen.main.title" = "Пожалуйста \n оцените приложение!";
+"thirdOnboardingScreen.main.title" = "Получайте ответы \n на всё";
+"fourthOnboardingScreen.main.title" = "Генерирует контент \n за секунды";
+"firstOnboardingScreen.subtitle" = "С ChatBot вы можете упростить свою жизнь, получая быстрые ответы на ваши запросы, полезные предложения и выполняя различные задачи с легкостью.";
+"secondOnboardingScreen.subtitle" = "Мы всегда просматриваем вашу обратную связь для повышения качества нашего продукта!";
+"thirdOnboardingScreen.subtitle" = "Наше приложение на основе языковой модели ИИ может предоставить ответы по широкому кругу тем!";
+"fourthOnboardingScreen.subtitle" = "Способное генерировать разнообразный контент, наше инструментарий полезно в различных контекстах и приложениях.";
+"firstPaywallScreen.main.title" = "Неограниченный \n полный доступ \n ко всем функциям";
+"firstPaywallScreen.billed.title" = "Еженедельная оплата";
+"firstPaywallScreen.usd.title" = "USD";
+"firstPaywallScreen.renewable.title" = "Автопродление. Можно отменить в любой момент.";
+"secondPaywallScreen.main.title" = "Полный доступ";
+"secondPaywallScreen.main.subtitle" = "Безлимитное использование \n Без рекламы \n Увеличенный лимит слов \n Продвинутая AI-модель";
+"secondPaywallScreen.try3Days" = "Попробуйте 3 дня бесплатно, затем $0.99/неделя \n Можно отменить в любой момент";
+"thirdPaywallScreen.main.title" = "Специальное предложение \n Полный доступ";
+"thirdPaywallScreen.main.subtitle" = "Персонализированные ответы, \n высокая скорость обработки \n и улучшенная производительность.";
+"thirdPaywallScreen.try.button" = "Попробовать сейчас!";
+"thirdPaywallScreen.timer.title" = "До конца предложения осталось";
+"thirdPaywallScreen.oldPrice.button" = "Старая цена $49.99";
+"thirdPaywallScreen.getOptions.button" = "Все возможности за $19.99/год";
+"firstPaywallButton.titile" = "Еженедельно";
+"secondPaywallButton.titile" = "Ежемесячно";
+"thirdPaywallButton.titile" = "Ежегодно";
+"mainScreen.main.title" = "Гений общения";
+"mainScreen.title" = "Готовые подсказки";
+"new.chat.button.text" = "НОВЫЙ ЧАТ";
+"chat.history.button.text" = "ИСТОРИЯ ЧАТА";
+"terms.of.use.button.text" = "УСЛОВИЯ ИСПОЛЬЗОВАНИЯ";
+"privacy.policy.button.text" = "ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ";
+"chat.send.message.text.field" = "Отправить сообщение...";
+"settings.back.button.title" = "Настройки";
+"free.premium.title" = "Ваш бесплатный 3-дневный \n премиум ещё не \n был активирован.";
+"free.premium.button.text" = "Нажмите, чтобы активировать";
+"first.scroll.button.title" = "Расскажи мне";
+"first.scroll.button.subtitle" = "анекдот";
+"second.scroll.button.title" = "Напиши мне";
+"second.scroll.button.subtitle" = "рецепт";
+"third.scroll.button.title" = "Напиши мне";
+"third.scroll.button.subtitle" = "код";
+"fourth.scroll.button.title" = "Напиши мне";
+"fourth.scroll.button.subtitle" = "песню";
+"fifth.scroll.button.title" = "Напиши мне";
+"fifth.scroll.button.subtitle" = "электронное письмо";
+"sixth.scroll.button.title" = "Подведи итог";
+"sixth.scroll.button.subtitle" = "текста";
+"seventh.scroll.button.title" = "Напиши мне";
+"seventh.scroll.button.subtitle" = "стихотворение";
+"eighth.scroll.button.title" = "Напиши мне";
+"eighth.scroll.button.subtitle" = "Эссе";
+"ninth.scroll.button.title" = "Научный";
+"ninth.scroll.button.subtitle" = "вопрос";
+"bottomButton.terms.text" = "Условия использования";
+"bottomButton.restore.text" = "Восстановить";
+"bottomButton.privacy.text" = "Политика конфиденциальности";

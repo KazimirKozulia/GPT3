@@ -1,12 +1,9 @@
-////
-////  PaywallSaleScreen.swift
-////  GPT3
-////
-////  Created by Kazimir Kozulia on 21.01.2025.
-////
 //
-//import SwiftUI
+//  PaywallSaleScreen.swift
+//  GPT3
 //
-//struct PaywallSaleScreen: View {
+//  Created by Kazimir Kozulia on 21.01.2025.
+//
+//
 
-//}
+

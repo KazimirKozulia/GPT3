@@ -1,0 +1,64 @@
+/* 
+  Localizable.strings
+  GPT3
+
+  Created by Kazimir Kozulia on 20.02.2025.
+  
+*/
+
+"continue.button.text" = "LANJUTKAN";
+"firstOnboardingScreen.main.title" = "Tanyakan apa saja";
+"secondOnboardingScreen.main.title" = "Silakan \n nilai aplikasi!";
+"thirdOnboardingScreen.main.title" = "Dapatkan jawaban \n untuk segalanya";
+"fourthOnboardingScreen.main.title" = "Menghasilkan konten \n dalam beberapa detik";
+"firstOnboardingScreen.subtitle" = "Dengan ChatBot, Anda dapat menyederhanakan hidup Anda dengan mendapatkan jawaban cepat atas pertanyaan Anda, menerima saran yang bermanfaat, dan menyelesaikan berbagai tugas dengan mudah.";
+"secondOnboardingScreen.subtitle" = "Kami selalu mengevaluasi umpan balik Anda untuk meningkatkan kualitas produk kami!";
+"thirdOnboardingScreen.subtitle" = "Aplikasi model bahasa AI kami dapat memberikan jawaban pada berbagai topik!";
+"fourthOnboardingScreen.subtitle" = "Dapat menghasilkan berbagai konten, alat kami sangat berguna dalam berbagai konteks dan aplikasi.";
+"firstPaywallScreen.main.title" = "Akses tanpa batas \n ke semua fitur";
+"firstPaywallScreen.billed.title" = "Ditagih mingguan sebesar";
+"firstPaywallScreen.usd.title" = "USD";
+"firstPaywallScreen.renewable.title" = "Pembaruan otomatis. Bisa dibatalkan kapan saja.";
+"secondPaywallScreen.main.title" = "Dapatkan Akses Penuh";
+"secondPaywallScreen.main.subtitle" = "Penggunaan tanpa batas \n Pengalaman bebas iklan \n Jumlah kata lebih banyak \n Model AI canggih";
+"secondPaywallScreen.try3Days" = "Coba gratis 3 hari, lalu $0.99/minggu \n Bisa dibatalkan kapan saja";
+"thirdPaywallScreen.main.title" = "Penawaran untuk Anda \n Dapatkan Akses Penuh";
+"thirdPaywallScreen.main.subtitle" = "Dapatkan respons personal, \n waktu pemrosesan lebih cepat, \n dan performa yang ditingkatkan.";
+"thirdPaywallScreen.try.button" = "Coba Sekarang!";
+"thirdPaywallScreen.timer.title" = "Waktu tersisa hingga penawaran berakhir";
+"thirdPaywallScreen.oldPrice.button" = "Harga lama $49.99";
+"thirdPaywallScreen.getOptions.button" = "Dapatkan semua fitur $19.99/tahun";
+"firstPaywallButton.titile" = "Mingguan";
+"secondPaywallButton.titile" = "Bulanan";
+"thirdPaywallButton.titile" = "Tahunan";
+"mainScreen.main.title" = "Genius Bicara"; 
+"mainScreen.title" = "Petunjuk siap pakai";
+"new.chat.button.text" = "OBROLAN BARU";
+"chat.history.button.text" = "RIWAYAT OBROLAN";
+"terms.of.use.button.text" = "SYARAT PENGGUNAAN";
+"privacy.policy.button.text" = "KEBIJAKAN PRIVASI";
+"chat.send.message.text.field" = "Kirim pesan...";
+"settings.back.button.title" = "Pengaturan";
+"free.premium.title" = "Premium gratis 3 hari Anda \n belum \n diklaim.";
+"free.premium.button.text" = "Sentuh untuk klaim";
+"first.scroll.button.title" = "Ceritakan saya sebuah";
+"first.scroll.button.subtitle" = "lelucon";
+"second.scroll.button.title" = "Berikan saya sebuah";
+"second.scroll.button.subtitle" = "resep";
+"third.scroll.button.title" = "Tulis sebuah";
+"third.scroll.button.subtitle" = "kode";
+"fourth.scroll.button.title" = "Tulis sebuah";
+"fourth.scroll.button.subtitle" = "lagu";
+"fifth.scroll.button.title" = "Tulis untuk saya sebuah";
+"fifth.scroll.button.subtitle" = "email";
+"sixth.scroll.button.title" = "Ringkas";
+"sixth.scroll.button.subtitle" = "teks";
+"seventh.scroll.button.title" = "Tulis sebuah";
+"seventh.scroll.button.subtitle" = "puisi";
+"eighth.scroll.button.title" = "Tulis untuk saya sebuah";
+"eighth.scroll.button.subtitle" = "esai";
+"ninth.scroll.button.title" = "Ilmu";
+"ninth.scroll.button.subtitle" = "pertanyaan";
+"bottomButton.terms.text" = "Syarat layanan";
+"bottomButton.restore.text" = "Pulihkan";
+"bottomButton.privacy.text" = "Kebijakan privasi";

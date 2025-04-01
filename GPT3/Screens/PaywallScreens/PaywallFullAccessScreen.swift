@@ -12,7 +12,7 @@ struct PaywallFullAccess {
     
     @ObservableState
     struct State: Equatable {
-        var continueButton = MainButton.State(buttonText: "CONTINUE")
+        var continueButton = MainButton.State(buttonText: Localizable.Continue.Button.text)
         var bottomButtons = BottomButtons.State()
         var backCrossButton = BackCrossButton.State()
     }
@@ -59,10 +59,22 @@ struct PaywallFullAccessScreen: View {
             Spacer()
             
             VStack{
-                Text("Unlimited \n Full Accesss to \n All Features")
+                Text(Localizable.FirstPaywallScreen.Main.title)
                     .font(.system(size: 32, weight: .bold))
                     .multilineTextAlignment(.center)
                     .foregroundStyle(.mainText)
+                
+                Text(Localizable.FirstPaywallScreen.Billed.title + " " + Localizable.FirstPaywallScreen.Usd.title)
+                    .font(Fonts.Roboto.regular.swiftUIFont(size: 22))
+                    .foregroundStyle(.mainText)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 40)
+                
+                Text(Localizable.FirstPaywallScreen.Renewable.title)
+                    .foregroundStyle(Color.mainText)
+                    .font(Fonts.Roboto.light.swiftUIFont(size: 15))
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 40)
             }
             
             Spacer()

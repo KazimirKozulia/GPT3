@@ -1,12 +1,22 @@
-input_dir: GPT3/Resources
-output_dir: GPT3/Resources/Generated
+#input_dir: GPT3/Resources
+#output_dir: GPT3/Resources/Generated
 
 fonts:
     inputs:
-        - Fonts
+        - GPT3/Resources/Fonts
     outputs:
         templateName: swift5
-        output: Fonts.swift
+        output: GPT3/Resources/Generated/Fonts.swift
         params:
             enumName: Fonts
 
+strings:
+    inputs:
+        - GPT3/ru.lproj/Localizable.strings
+    outputs:
+        templateName: structured-swift5
+        output: GPT3/Resources/Generated/String.swift
+        params:
+            enumName: Localizable
+            publicAccess: 1
+            noComments: 0
