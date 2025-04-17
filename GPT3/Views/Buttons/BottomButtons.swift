@@ -37,19 +37,10 @@ struct BottomButtons {
             case .restoreButtonTapped:
                 return .none
             case .privacyButtonTapped:
-//                guard let privacyLink: String = state.generalPaywall.globalSettings.getRemoteValue(key: GeneralPaywallKeys.privacyPolicyLink),
-//                      let link = URL(string: privacyLink) else { return .none }
-//                return .run { _ in
-//                    await openURL.callAsFunction(link)
-//                }
-                return .none
-
-//
-//                guard let privacyLink: String = state.globalSettings.privacyPolicyLink,
-//                      let link = URL(string: privacyLink) else { return .none }
-//                return .run { _ in
-//                    await openURL.callAsFunction(link)
-//                }
+                       guard let link = URL(string: "https://policies.google.com/privacy?hl=en-US") else { return .none }
+                return .run { _ in
+                    await openURL(link)
+                }
             }
         }
     }

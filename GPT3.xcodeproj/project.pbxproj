@@ -10,12 +10,17 @@
 		33034FF32D4D409A007BAA25 /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33034FF22D4D408C007BAA25 /* ChatScreen.swift */; };
 		33603F472D989C790093894D /* GPTNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33603F462D989C5F0093894D /* GPTNavigation.swift */; };
 		33603F4A2D9999700093894D /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33603F492D9999660093894D /* LaunchScreen.swift */; };
+		33603F4C2D9D18250093894D /* GeneralPaywallScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33603F4B2D9D18190093894D /* GeneralPaywallScreen.swift */; };
+		33603F4F2D9DD38F0093894D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 33603F4E2D9DD38F0093894D /* Lottie */; };
+		33603F512D9DD5620093894D /* GearAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 33603F502D9DD5620093894D /* GearAnimation.json */; };
+		33603F542DB03A850093894D /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 33603F532DB03A850093894D /* OpenAI */; };
+		33603F562DB03AA30093894D /* ChatService .swift in Sources */ = {isa = PBXBuildFile; fileRef = 33603F552DB03A9B0093894D /* ChatService .swift */; };
 		337B44CC2D41564600B06836 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337B44BC2D41564600B06836 /* Preview Assets.xcassets */; };
 		337B44CD2D41564600B06836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337B44BE2D41564600B06836 /* Assets.xcassets */; };
 		337B44CF2D41564600B06836 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B44BF2D41564600B06836 /* ContentView.swift */; };
 		337B44D12D41564600B06836 /* GPT3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B44C12D41564600B06836 /* GPT3App.swift */; };
 		337B44D22D41564600B06836 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B44C32D41564600B06836 /* MainScreen.swift */; };
-		337B44D72D41564600B06836 /* PaywallFullAccessScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B44C82D41564600B06836 /* PaywallFullAccessScreen.swift */; };
+		337B44D72D41564600B06836 /* IntroductoryPaywallScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B44C82D41564600B06836 /* IntroductoryPaywallScreen.swift */; };
 		337B44D82D41564600B06836 /* PaywallGetFullAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B44C92D41564600B06836 /* PaywallGetFullAccess.swift */; };
 		337B44D92D41564600B06836 /* PaywallSaleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B44CA2D41564600B06836 /* PaywallSaleScreen.swift */; };
 		337B44DD2D41567700B06836 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B44DC2D41566900B06836 /* MainButton.swift */; };
@@ -75,6 +80,9 @@
 		33034FF22D4D408C007BAA25 /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
 		33603F462D989C5F0093894D /* GPTNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTNavigation.swift; sourceTree = "<group>"; };
 		33603F492D9999660093894D /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		33603F4B2D9D18190093894D /* GeneralPaywallScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPaywallScreen.swift; sourceTree = "<group>"; };
+		33603F502D9DD5620093894D /* GearAnimation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GearAnimation.json; sourceTree = "<group>"; };
+		33603F552DB03A9B0093894D /* ChatService .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatService .swift"; sourceTree = "<group>"; };
 		337B43FD2D3BD4F700B06836 /* GPT3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPT3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		337B440D2D3BD4F800B06836 /* GPT3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPT3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		337B44172D3BD4F800B06836 /* GPT3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPT3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,7 +92,7 @@
 		337B44C12D41564600B06836 /* GPT3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT3App.swift; sourceTree = "<group>"; };
 		337B44C22D41564600B06836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		337B44C32D41564600B06836 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
-		337B44C82D41564600B06836 /* PaywallFullAccessScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallFullAccessScreen.swift; sourceTree = "<group>"; };
+		337B44C82D41564600B06836 /* IntroductoryPaywallScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductoryPaywallScreen.swift; sourceTree = "<group>"; };
 		337B44C92D41564600B06836 /* PaywallGetFullAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallGetFullAccess.swift; sourceTree = "<group>"; };
 		337B44CA2D41564600B06836 /* PaywallSaleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallSaleScreen.swift; sourceTree = "<group>"; };
 		337B44DC2D41566900B06836 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
@@ -152,9 +160,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33603F4F2D9DD38F0093894D /* Lottie in Frameworks */,
 				33B7C0402D709B3800DBCB87 /* FirebaseCrashlytics in Frameworks */,
 				33B7C05D2D70E0F100DBCB87 /* Adapty in Frameworks */,
 				33B7C03E2D709B3800DBCB87 /* FirebaseAnalytics in Frameworks */,
+				33603F542DB03A850093894D /* OpenAI in Frameworks */,
 				337B44FD2D4168D300B06836 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +234,7 @@
 		337B44CB2D41564600B06836 /* GPT3 */ = {
 			isa = PBXGroup;
 			children = (
+				33603F552DB03A9B0093894D /* ChatService .swift */,
 				33B7C0672D749E4600DBCB87 /* AdaptyService.swift */,
 				33B7C0272D675E1400DBCB87 /* AdaptyKeys.swift */,
 				33B7C0342D678A7E00DBCB87 /* Extension */,
@@ -269,7 +280,8 @@
 		33A11CB32D439E930009A287 /* PaywallScreens */ = {
 			isa = PBXGroup;
 			children = (
-				337B44C82D41564600B06836 /* PaywallFullAccessScreen.swift */,
+				33603F4B2D9D18190093894D /* GeneralPaywallScreen.swift */,
+				337B44C82D41564600B06836 /* IntroductoryPaywallScreen.swift */,
 				337B44C92D41564600B06836 /* PaywallGetFullAccess.swift */,
 				337B44CA2D41564600B06836 /* PaywallSaleScreen.swift */,
 			);
@@ -288,6 +300,7 @@
 		33B7C0322D676FA000DBCB87 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				33603F502D9DD5620093894D /* GearAnimation.json */,
 				33B7C0332D677B8B00DBCB87 /* Fonts */,
 				33B7C02F2D676D4200DBCB87 /* Generated */,
 			);
@@ -387,6 +400,8 @@
 				33B7C03D2D709B3800DBCB87 /* FirebaseAnalytics */,
 				33B7C03F2D709B3800DBCB87 /* FirebaseCrashlytics */,
 				33B7C05C2D70E0F100DBCB87 /* Adapty */,
+				33603F4E2D9DD38F0093894D /* Lottie */,
+				33603F532DB03A850093894D /* OpenAI */,
 			);
 			productName = GPT3;
 			productReference = 337B43FD2D3BD4F700B06836 /* GPT3.app */;
@@ -489,6 +504,8 @@
 				337B44622D414C4100B06836 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				33B7C03C2D709B3800DBCB87 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				33B7C05B2D70E0F100DBCB87 /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */,
+				33603F4D2D9DD38F0093894D /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				33603F522DAD445D0093894D /* XCRemoteSwiftPackageReference "OpenAI" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 337B43FE2D3BD4F700B06836 /* Products */;
@@ -517,6 +534,7 @@
 				33B7C0902D875BBD00DBCB87 /* Roboto-Medium.ttf in Resources */,
 				33B7C0912D875BBD00DBCB87 /* Roboto-Regular.ttf in Resources */,
 				33B7C0922D875BBD00DBCB87 /* Roboto-ThinItalic.ttf in Resources */,
+				33603F512D9DD5620093894D /* GearAnimation.json in Resources */,
 				33B7C0932D875BBD00DBCB87 /* Roboto-Bold.ttf in Resources */,
 				33B7C0942D875BBD00DBCB87 /* Roboto-LightItalic.ttf in Resources */,
 				33B7C0952D875BBD00DBCB87 /* Roboto-Thin.ttf in Resources */,
@@ -571,6 +589,7 @@
 				337B44CF2D41564600B06836 /* ContentView.swift in Sources */,
 				33C1D96A2D4675B300D5D99C /* BackSettingButton.swift in Sources */,
 				337B44D12D41564600B06836 /* GPT3App.swift in Sources */,
+				33603F562DB03AA30093894D /* ChatService .swift in Sources */,
 				337B44D22D41564600B06836 /* MainScreen.swift in Sources */,
 				33A11CB02D4261300009A287 /* BottomButtons.swift in Sources */,
 				33A11CAC2D425CE70009A287 /* BackCrossButton.swift in Sources */,
@@ -579,9 +598,10 @@
 				33C1D9722D46971D00D5D99C /* SettingBottomButtons.swift in Sources */,
 				337B44DD2D41567700B06836 /* MainButton.swift in Sources */,
 				33603F472D989C790093894D /* GPTNavigation.swift in Sources */,
+				33603F4C2D9D18250093894D /* GeneralPaywallScreen.swift in Sources */,
 				33B7C0362D678AB700DBCB87 /* Extension.swift in Sources */,
 				33C1D9662D46717700D5D99C /* SettingScreen.swift in Sources */,
-				337B44D72D41564600B06836 /* PaywallFullAccessScreen.swift in Sources */,
+				337B44D72D41564600B06836 /* IntroductoryPaywallScreen.swift in Sources */,
 				33E9CB0E2D5A788600082FFD /* GlobalSettings.swift in Sources */,
 				33B7C0282D675E2100DBCB87 /* AdaptyKeys.swift in Sources */,
 				33C1D9642D466C3100D5D99C /* SettingButton.swift in Sources */,
@@ -943,6 +963,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		33603F4D2D9DD38F0093894D /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.1;
+			};
+		};
+		33603F522DAD445D0093894D /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
 		337B44622D414C4100B06836 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
@@ -970,6 +1006,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		33603F4E2D9DD38F0093894D /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33603F4D2D9DD38F0093894D /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		33603F532DB03A850093894D /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33603F522DAD445D0093894D /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
 		337B44FC2D4168D300B06836 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 337B44622D414C4100B06836 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;

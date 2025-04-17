@@ -1,5 +1,5 @@
 {
-  "originHash" : "55918ca7a00f820966f3782bfe76a70458c53505223359d209878f4cad953b0c",
+  "originHash" : "f889056c9da13cf75ddfed2a9faafce308f89d1a36488fb03159989992fcef05",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -110,12 +110,30 @@
       }
     },
     {
+      "identity" : "lottie-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-ios.git",
+      "state" : {
+        "revision" : "047aa81b77adcbf583a966dfef620d17650cc656",
+        "version" : "4.5.1"
+      }
+    },
+    {
       "identity" : "nanopb",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/nanopb.git",
       "state" : {
         "revision" : "b7e1104502eca3a213b46303391ca4d3bc8ddec1",
         "version" : "2.30910.0"
+      }
+    },
+    {
+      "identity" : "openai",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MacPaw/OpenAI.git",
+      "state" : {
+        "revision" : "7eef412b26b0b2af6add548bb60f25f306b41ee2",
+        "version" : "0.4.1"
       }
     },
     {

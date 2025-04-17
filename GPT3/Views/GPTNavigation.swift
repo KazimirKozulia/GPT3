@@ -16,7 +16,7 @@ struct GPTNavigation {
         case onboarding(Onboarding)
         case main(Main)
         case setting(Setting)
-//        case payWall(PaywallFullAccess)
+//        case payWall(GeneralPaywall)
     }
     
     @ObservableState
@@ -113,6 +113,9 @@ struct GPTNavigationView: View {
             case let .setting(store):
                 SettingScreen(store: store)
                     .toolbar(.hidden)
+//            case .payWall(store):
+//                GeneralPaywall(store:store)
+//                    .toolbar(.hidden)
             }
         }
         

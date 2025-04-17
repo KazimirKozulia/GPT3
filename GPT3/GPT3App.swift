@@ -35,6 +35,16 @@ struct GPT3App: App {
 //}
     
     var body: some Scene {
+//        WindowGroup {
+//            LaunchScreen(
+//                store: StoreOf<Launch>(
+//                    initialState:
+//                        Launch.State(),
+//                    reducer: { Launch() }
+//                )
+//            )
+//        }
+
         WindowGroup {
             OnboardingScreens(
                 store: StoreOf<Onboarding>(

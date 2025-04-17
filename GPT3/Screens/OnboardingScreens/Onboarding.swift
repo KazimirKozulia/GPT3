@@ -70,7 +70,8 @@ struct Onboarding {
         case didAppear
     }
     
-    
+    @Dependency(\.openURL) var openURL
+
     var body: some ReducerOf<Onboarding> {
         Reduce { state, action in
             switch action {
@@ -83,12 +84,18 @@ struct Onboarding {
                 case .third:
                     return .none
                 case .fourth:
-//                    state.isOnboardingPassed = true
+                    state.$isOnboardingPassed.withLock{
+                        $0 = true
+                    } 
                     return .none
                 }
                 //                return .send(.mainButton(.buttonTapped))
             case .bottomButtons(.termsButtonTapped):
                 return .none
+//                guard let privacyLink: String = state.generalPaywall.globalSettings.getRemoteValue(key: GeneralPaywallKeys.privacyPolicyLink),
+//                      let link = URL(string: privacyLink) else { return .none }
+//                return .run { _ in
+//                    await openURL.callAsFunction(link)
             case .bottomButtons(.restoreButtonTapped):
                 return .none
             case .bottomButtons(.privacyButtonTapped):
@@ -101,6 +108,9 @@ struct Onboarding {
         }
         Scope(state: \.continueButton, action: \.mainButton) {
             MainButton()
+        }
+        Scope(state: \.bottomButtons, action: \.bottomButtons) {
+            BottomButtons()
         }
     }
 }

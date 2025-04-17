@@ -8,7 +8,7 @@ import SwiftUI
 import ComposableArchitecture
 
 @Reducer
-struct PaywallFullAccess {
+struct IntroductoryPaywall {
     
     @ObservableState
     struct State: Equatable {
@@ -23,7 +23,7 @@ struct PaywallFullAccess {
         case backCrossButton(BackCrossButton.Action)
     }
     
-    var body: some ReducerOf<PaywallFullAccess> {
+    var body: some ReducerOf<IntroductoryPaywall> {
         Reduce { state, action in
             switch action {
             case .continueButton:
@@ -42,8 +42,8 @@ struct PaywallFullAccess {
     }
 }
 
-struct PaywallFullAccessScreen: View {
-    let store: StoreOf<PaywallFullAccess>
+struct IntroductoryPaywallScreen: View {
+    let store: StoreOf<IntroductoryPaywall>
     var body: some View {
         VStack{
             HStack{
@@ -103,10 +103,10 @@ struct PaywallFullAccessScreen: View {
 }
 
 #Preview {
-    PaywallFullAccessScreen(
-        store: StoreOf<PaywallFullAccess>(
-            initialState: PaywallFullAccess.State(),
-            reducer: { PaywallFullAccess() }
+    IntroductoryPaywallScreen(
+        store: StoreOf<IntroductoryPaywall>(
+            initialState: IntroductoryPaywall.State(),
+            reducer: { IntroductoryPaywall() }
         )
     )
 }

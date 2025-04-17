@@ -13,3 +13,18 @@ enum GeneralOnboardingKeys: String {
     case termsOfUseLink
 
 }
+
+protocol RemoteConfigKeyValue {
+    var rawValueString: String { get }
+}
+
+enum GeneralPaywallKeys: String, RemoteConfigKeyValue {
+    var rawValueString: String {
+        get { self.rawValue }
+    }
+    
+    case privacyPolicyLink
+    case termsOfUseLink
+
+}
+

@@ -16,6 +16,7 @@ struct Chat {
         var settingButton = SettingButton.State()
         var messages: [Message] = []
         var newMessageText: String = ""
+        var resivedMessage = "foobar"
     }
     
     struct Message: Equatable, Identifiable {
@@ -29,7 +30,10 @@ struct Chat {
         case newMessageTextChanged(String)
         case sendMessage
         case messageReceived(Message)
+        case chatRequestResult(Result<String, Error>)
     }
+    
+    @Dependency(\.chatService) var chatService
     
     var body: some ReducerOf<Chat> {
         Reduce{ state, action in
@@ -46,10 +50,26 @@ struct Chat {
                 let newMessage = Message(text: state.newMessageText, isSentByCurrentUser: true)
                 state.messages.append(newMessage)
                 state.newMessageText = ""
-                return .none
+                return .run { [message = state.messages.last?.text] send in
+                    await send(
+                        .chatRequestResult(
+                            Result{
+                                try await chatService.sendMessage(message ?? "")
+                            }
+                        )
+                    )
+                }
                 
             case let .messageReceived(message):
                 state.messages.append(message)
+                return .none
+                
+            case .chatRequestResult(.success(let string)):
+                state.resivedMessage = string
+                return .none
+                
+            case .chatRequestResult(.failure(let error)):
+                state.resivedMessage = error.localizedDescription
                 return .none
             }
         }
@@ -58,6 +78,7 @@ struct Chat {
 
 struct ChatScreen: View {
     let store: StoreOf<Chat>
+    
     var body: some View {
         WithViewStore(self.store, observe: { $0 }){viewStore in
             VStack{
@@ -65,6 +86,8 @@ struct ChatScreen: View {
                     SettingButtonView(store: store.scope(state: \.settingButton, action: \.settingButton))
                     
                     Spacer()
+                    
+                    Text(store.resivedMessage)
                     
                     Text(Localizable.MainScreen.Main.title)
                         .foregroundStyle(.mainText)

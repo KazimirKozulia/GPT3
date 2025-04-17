@@ -96,8 +96,8 @@ struct SettingScreen: View {
             SettingBottomButtonsView (store: store.scope(state: \.termsButton, action: \.bottomButtons ))
             
             SettingBottomButtonsView (store: store.scope(state: \.privacyButton, action: \.bottomButtons ))
-        } 
-            .background(.mainBackground)
+        }
+        .background(.mainBackground)
     }
 }
 
