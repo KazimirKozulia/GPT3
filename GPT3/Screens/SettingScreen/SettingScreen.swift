@@ -13,6 +13,7 @@ struct Setting {
     
     @ObservableState
     struct State: Equatable {
+        var tapToClaimButton = TapToClaimButton.State()
         var backSettingButton = BackSettingButton.State()
         var newChatButtons = SettingChatButton.State(buttonsText: Localizable.New.Chat.Button.text)
         var chatHistoryButtons = SettingChatButton.State(buttonsText: Localizable.Chat.History.Button.text)
@@ -21,6 +22,7 @@ struct Setting {
     }
     
     enum Action {
+        case tapToClaimButton(TapToClaimButton.Action)
         case backSettingButton(BackSettingButton.Action)
         case chatButtons(SettingChatButton.Action)
         case bottomButtons(SettingBottomButtons.Action)
@@ -31,10 +33,12 @@ struct Setting {
             switch action {
             case .backSettingButton:
                 return .none
-            case .chatButtons(_):
+            case .chatButtons:
                 return .none
-            case .bottomButtons(_):
+            case .bottomButtons:
                 return.none
+            case .tapToClaimButton:
+                return .none
             }
         }
     }
@@ -54,7 +58,7 @@ struct SettingScreen: View {
                 Spacer()
                 
             } .padding(.horizontal, 20)
-                        
+            
             ZStack{
                 Canvas { _,_ in }
                     .frame(width: .infinity, height: 110)
@@ -62,18 +66,14 @@ struct SettingScreen: View {
                     .cornerRadius(20)
                     .padding(.horizontal, 20)
                 HStack {
+                    
                     VStack{
                         Text(Localizable.Free.Premium.title)
                             .foregroundStyle(.white)
                             .padding(.leading, 30)
                             .font(Fonts.Roboto.light.swiftUIFont(size: 15))
-                        
-                        Button{
-                        } label: { Text(Localizable.Free.Premium.Button.text)}
-                            .font(Fonts.Roboto.light.swiftUIFont(size: 16))
-                        .foregroundStyle(.indigo)
-                        .background(Color.yellow)
-                        .cornerRadius(20)
+                
+                        TapToClaimButtonView (store: store.scope(state: \.tapToClaimButton, action: \.tapToClaimButton))
                     }
                     
                     Spacer()
@@ -85,7 +85,9 @@ struct SettingScreen: View {
                 }
                 
             }
+            
             SettingChatButtonView (store: store.scope(state: \.newChatButtons, action: \.chatButtons ))
+            
             ZStack(alignment: .trailing){
                 SettingChatButtonView (store: store.scope(state: \.chatHistoryButtons, action: \.chatButtons ))
                 Image(.vector)

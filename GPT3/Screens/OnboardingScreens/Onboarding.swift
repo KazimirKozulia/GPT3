@@ -67,10 +67,10 @@ struct Onboarding {
         case mainButton(MainButton.Action)
         case bottomButtons(BottomButtons.Action)
         case backButton(BackCrossButton.Action)
-        case didAppear
+//        case didAppear
     }
     
-    @Dependency(\.openURL) var openURL
+//    @Dependency(\.openURL) var openURL
 
     var body: some ReducerOf<Onboarding> {
         Reduce { state, action in
@@ -92,18 +92,14 @@ struct Onboarding {
                 //                return .send(.mainButton(.buttonTapped))
             case .bottomButtons(.termsButtonTapped):
                 return .none
-//                guard let privacyLink: String = state.generalPaywall.globalSettings.getRemoteValue(key: GeneralPaywallKeys.privacyPolicyLink),
-//                      let link = URL(string: privacyLink) else { return .none }
-//                return .run { _ in
-//                    await openURL.callAsFunction(link)
             case .bottomButtons(.restoreButtonTapped):
                 return .none
             case .bottomButtons(.privacyButtonTapped):
                 return .none
             case .backButton:
                 return .none
-            case .didAppear:
-                return .none
+//            case .didAppear:
+//                return .none
             }
         }
         Scope(state: \.continueButton, action: \.mainButton) {
@@ -162,9 +158,9 @@ struct OnboardingScreens: View {
         }
         .containerRelativeFrame([.horizontal, .vertical])
         .background(.mainBackground)
-        .onAppear {
-            store.send(.didAppear)
-        }
+//        .onAppear {
+//            store.send(.didAppear)
+//        }
     }
 }
 

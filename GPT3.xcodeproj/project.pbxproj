@@ -50,6 +50,7 @@
 		33B7C0962D875BBD00DBCB87 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33B7C0812D875BBD00DBCB87 /* Roboto-Black.ttf */; };
 		33B7C0972D875BBD00DBCB87 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33B7C0822D875BBD00DBCB87 /* Roboto-BlackItalic.ttf */; };
 		33B7C0982D875BBD00DBCB87 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33B7C0892D875BBD00DBCB87 /* Roboto-MediumItalic.ttf */; };
+		33C0C7E42DBEAF5300AD023A /* TapToClaimButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C0C7E32DBEAF3900AD023A /* TapToClaimButton.swift */; };
 		33C1D9642D466C3100D5D99C /* SettingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C1D9632D466C2500D5D99C /* SettingButton.swift */; };
 		33C1D9662D46717700D5D99C /* SettingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C1D9652D46717000D5D99C /* SettingScreen.swift */; };
 		33C1D9682D46721200D5D99C /* ScrollButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C1D9672D46720800D5D99C /* ScrollButtons.swift */; };
@@ -133,6 +134,7 @@
 		33B7C08A2D875BBD00DBCB87 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		33B7C08B2D875BBD00DBCB87 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		33B7C08C2D875BBD00DBCB87 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		33C0C7E32DBEAF3900AD023A /* TapToClaimButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapToClaimButton.swift; sourceTree = "<group>"; };
 		33C1D9632D466C2500D5D99C /* SettingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButton.swift; sourceTree = "<group>"; };
 		33C1D9652D46717000D5D99C /* SettingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScreen.swift; sourceTree = "<group>"; };
 		33C1D9672D46720800D5D99C /* ScrollButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollButtons.swift; sourceTree = "<group>"; };
@@ -366,6 +368,7 @@
 		33D599C72D50F756001CF328 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				33C0C7E32DBEAF3900AD023A /* TapToClaimButton.swift */,
 				337B44DC2D41566900B06836 /* MainButton.swift */,
 				33C1D9712D46970300D5D99C /* SettingBottomButtons.swift */,
 				33C1D96F2D4691ED00D5D99C /* SettingChatButton.swift */,
@@ -589,6 +592,7 @@
 				337B44CF2D41564600B06836 /* ContentView.swift in Sources */,
 				33C1D96A2D4675B300D5D99C /* BackSettingButton.swift in Sources */,
 				337B44D12D41564600B06836 /* GPT3App.swift in Sources */,
+				33C0C7E42DBEAF5300AD023A /* TapToClaimButton.swift in Sources */,
 				33603F562DB03AA30093894D /* ChatService .swift in Sources */,
 				337B44D22D41564600B06836 /* MainScreen.swift in Sources */,
 				33A11CB02D4261300009A287 /* BottomButtons.swift in Sources */,
