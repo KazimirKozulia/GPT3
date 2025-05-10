@@ -10,7 +10,7 @@ import OpenAI
 
 struct ChatService {
     
-    var sendMessage:(_ modal: String) async throws -> String
+    var sendMessage:(_ messages: [ChatQuery.ChatCompletionMessageParam]) async throws -> String
 }
 
 extension DependencyValues {
@@ -21,11 +21,13 @@ extension DependencyValues {
 }
 
 extension ChatService: DependencyKey {
-    static let liveValue = Self { modal in
-        var openAi = OpenAI(apiToken:"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")
-        let query = ChatQuery(messages: [.user(.init(content: .string(modal))), .assistant(.init(content: ""))], model: .gpt4)
+    static let liveValue = Self { messages in
+        var openAi = OpenAI(apiToken:"")
+        let query = ChatQuery(messages: messages, model: .gpt4)
         let result = try await openAi.chats(query: query)
         return result.choices.first?.message.content ?? ""
+
+
     }
 }
 

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import ComposableArchitecture
+import OpenAI
 
 @Reducer
 struct Chat {
@@ -14,22 +15,24 @@ struct Chat {
     @ObservableState
     struct State: Equatable {
         var settingButton = SettingButton.State()
-        var messages: [Message] = []
+        @Shared(.chatHistory) var messages: [Message] = []
         var newMessageText: String = ""
-        var resivedMessage = "foobar"
+        var isLoading = false
+        var resivedMessage: [ChatQuery.ChatCompletionMessageParam]
     }
     
-    struct Message: Equatable, Identifiable {
-        let id = UUID()
+    struct Message: Equatable, Identifiable, Codable {
+        var id = UUID()
         let text: String
         let isSentByCurrentUser: Bool
+        var timestamp: Date = Date()
     }
-    
+
     enum Action {
         case settingButton(SettingButton.Action)
         case newMessageTextChanged(String)
         case sendMessage
-        case messageReceived(Message)
+        case messageReceived(String)
         case chatRequestResult(Result<String, Error>)
     }
     
@@ -46,31 +49,62 @@ struct Chat {
                 
             case .sendMessage:
                 guard !state.newMessageText.isEmpty else { return .none }
+                guard !state.isLoading else { return .none }
                 
-                let newMessage = Message(text: state.newMessageText, isSentByCurrentUser: true)
-                state.messages.append(newMessage)
+                let userMessage = Message(
+                    text: state.newMessageText,
+                    isSentByCurrentUser: true
+                )
+//                let newMessage = Message(text: state.newMessageText, isSentByCurrentUser: true)
+                state.messages.append(userMessage)
                 state.newMessageText = ""
+                state.isLoading = true
+//                return .none
                 return .run { [message = state.messages.last?.text] send in
                     await send(
                         .chatRequestResult(
                             Result{
-                                try await chatService.sendMessage(message ?? "")
+                                try await chatService.sendMessage(message)
                             }
                         )
                     )
                 }
                 
+            
+                
             case let .messageReceived(message):
-                state.messages.append(message)
+                let assistantMessage = Message(
+                    text: message,
+                    isSentByCurrentUser: false
+                )
+                state.messages.append(assistantMessage)
                 return .none
                 
             case .chatRequestResult(.success(let string)):
-                state.resivedMessage = string
+//                state.messageReceived(string) = string
                 return .none
                 
             case .chatRequestResult(.failure(let error)):
-                state.resivedMessage = error.localizedDescription
+//                state.resivedMessage = error.localizedDescription
                 return .none
+                
+                /*
+                 case .chatRequestResult(.success(let response)):
+                                // Обрабатываем успешный ответ
+                                return .run { send in
+                                    await send(.messageReceived(response))
+                                }
+                                
+                            case .chatRequestResult(.failure(let error)):
+                                // Обрабатываем ошибку как сообщение
+                                let errorMessage = Message(
+                                    text: "Ошибка: \(error.localizedDescription)",
+                                    isSentByCurrentUser: false
+                                )
+                                state.messages.append(errorMessage)
+                                state.isLoading = false
+                                return .none
+                 */
             }
         }
     }
@@ -87,7 +121,7 @@ struct ChatScreen: View {
                     
                     Spacer()
                     
-                    Text(store.resivedMessage)
+//                    Text(store.resivedMessage)
                     
                     Text(Localizable.MainScreen.Main.title)
                         .foregroundStyle(.mainText)

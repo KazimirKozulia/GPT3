@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		33034FF32D4D409A007BAA25 /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33034FF22D4D408C007BAA25 /* ChatScreen.swift */; };
+		333577AC2DC527BB002E44AB /* Preset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333577AB2DC527B8002E44AB /* Preset.swift */; };
+		333577B02DC52814002E44AB /* SharedKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333577AF2DC5280B002E44AB /* SharedKey.swift */; };
 		33603F472D989C790093894D /* GPTNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33603F462D989C5F0093894D /* GPTNavigation.swift */; };
 		33603F4A2D9999700093894D /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33603F492D9999660093894D /* LaunchScreen.swift */; };
 		33603F4C2D9D18250093894D /* GeneralPaywallScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33603F4B2D9D18190093894D /* GeneralPaywallScreen.swift */; };
@@ -35,7 +37,6 @@
 		33B7C03E2D709B3800DBCB87 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 33B7C03D2D709B3800DBCB87 /* FirebaseAnalytics */; };
 		33B7C0402D709B3800DBCB87 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 33B7C03F2D709B3800DBCB87 /* FirebaseCrashlytics */; };
 		33B7C0422D709C1500DBCB87 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33B7C0412D709C1500DBCB87 /* GoogleService-Info.plist */; };
-		33B7C05D2D70E0F100DBCB87 /* Adapty in Frameworks */ = {isa = PBXBuildFile; productRef = 33B7C05C2D70E0F100DBCB87 /* Adapty */; };
 		33B7C0682D749E5300DBCB87 /* AdaptyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B7C0672D749E4600DBCB87 /* AdaptyService.swift */; };
 		33B7C06A2D845E8A00DBCB87 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B7C0692D845E8400DBCB87 /* String.swift */; };
 		33B7C08D2D875BBD00DBCB87 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33B7C0842D875BBD00DBCB87 /* Roboto-BoldItalic.ttf */; };
@@ -79,6 +80,8 @@
 
 /* Begin PBXFileReference section */
 		33034FF22D4D408C007BAA25 /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
+		333577AB2DC527B8002E44AB /* Preset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preset.swift; sourceTree = "<group>"; };
+		333577AF2DC5280B002E44AB /* SharedKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedKey.swift; sourceTree = "<group>"; };
 		33603F462D989C5F0093894D /* GPTNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTNavigation.swift; sourceTree = "<group>"; };
 		33603F492D9999660093894D /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		33603F4B2D9D18190093894D /* GeneralPaywallScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPaywallScreen.swift; sourceTree = "<group>"; };
@@ -164,7 +167,6 @@
 			files = (
 				33603F4F2D9DD38F0093894D /* Lottie in Frameworks */,
 				33B7C0402D709B3800DBCB87 /* FirebaseCrashlytics in Frameworks */,
-				33B7C05D2D70E0F100DBCB87 /* Adapty in Frameworks */,
 				33B7C03E2D709B3800DBCB87 /* FirebaseAnalytics in Frameworks */,
 				33603F542DB03A850093894D /* OpenAI in Frameworks */,
 				337B44FD2D4168D300B06836 /* ComposableArchitecture in Frameworks */,
@@ -194,6 +196,22 @@
 				33034FF22D4D408C007BAA25 /* ChatScreen.swift */,
 			);
 			path = ChatScreen;
+			sourceTree = "<group>";
+		};
+		333577AA2DC527AE002E44AB /* Presets */ = {
+			isa = PBXGroup;
+			children = (
+				333577AB2DC527B8002E44AB /* Preset.swift */,
+			);
+			path = Presets;
+			sourceTree = "<group>";
+		};
+		333577AD2DC527F3002E44AB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				333577AF2DC5280B002E44AB /* SharedKey.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		33603F482D9999380093894D /* LaunchScreen */ = {
@@ -236,6 +254,7 @@
 		337B44CB2D41564600B06836 /* GPT3 */ = {
 			isa = PBXGroup;
 			children = (
+				333577AD2DC527F3002E44AB /* Shared */,
 				33603F552DB03A9B0093894D /* ChatService .swift */,
 				33B7C0672D749E4600DBCB87 /* AdaptyService.swift */,
 				33B7C0272D675E1400DBCB87 /* AdaptyKeys.swift */,
@@ -258,6 +277,7 @@
 		337B44DA2D41564A00B06836 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				333577AA2DC527AE002E44AB /* Presets */,
 				33603F462D989C5F0093894D /* GPTNavigation.swift */,
 				33D599C72D50F756001CF328 /* Buttons */,
 			);
@@ -402,7 +422,6 @@
 				337B44FC2D4168D300B06836 /* ComposableArchitecture */,
 				33B7C03D2D709B3800DBCB87 /* FirebaseAnalytics */,
 				33B7C03F2D709B3800DBCB87 /* FirebaseCrashlytics */,
-				33B7C05C2D70E0F100DBCB87 /* Adapty */,
 				33603F4E2D9DD38F0093894D /* Lottie */,
 				33603F532DB03A850093894D /* OpenAI */,
 			);
@@ -506,7 +525,6 @@
 			packageReferences = (
 				337B44622D414C4100B06836 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				33B7C03C2D709B3800DBCB87 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				33B7C05B2D70E0F100DBCB87 /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */,
 				33603F4D2D9DD38F0093894D /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				33603F522DAD445D0093894D /* XCRemoteSwiftPackageReference "OpenAI" */,
 			);
@@ -595,11 +613,13 @@
 				33C0C7E42DBEAF5300AD023A /* TapToClaimButton.swift in Sources */,
 				33603F562DB03AA30093894D /* ChatService .swift in Sources */,
 				337B44D22D41564600B06836 /* MainScreen.swift in Sources */,
+				333577B02DC52814002E44AB /* SharedKey.swift in Sources */,
 				33A11CB02D4261300009A287 /* BottomButtons.swift in Sources */,
 				33A11CAC2D425CE70009A287 /* BackCrossButton.swift in Sources */,
 				33B7C06A2D845E8A00DBCB87 /* String.swift in Sources */,
 				33034FF32D4D409A007BAA25 /* ChatScreen.swift in Sources */,
 				33C1D9722D46971D00D5D99C /* SettingBottomButtons.swift in Sources */,
+				333577AC2DC527BB002E44AB /* Preset.swift in Sources */,
 				337B44DD2D41567700B06836 /* MainButton.swift in Sources */,
 				33603F472D989C790093894D /* GPTNavigation.swift in Sources */,
 				33603F4C2D9D18250093894D /* GeneralPaywallScreen.swift in Sources */,
@@ -999,14 +1019,6 @@
 				minimumVersion = 11.9.0;
 			};
 		};
-		33B7C05B2D70E0F100DBCB87 /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/adaptyteam/AdaptySDK-iOS.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.3.6;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1034,11 +1046,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 33B7C03C2D709B3800DBCB87 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
-		};
-		33B7C05C2D70E0F100DBCB87 /* Adapty */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 33B7C05B2D70E0F100DBCB87 /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */;
-			productName = Adapty;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

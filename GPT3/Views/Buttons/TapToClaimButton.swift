@@ -19,7 +19,7 @@ struct TapToClaimButton {
         case buttonTapped
     }
     
-    var body: some ReducerOf<MainButton> {
+    var body: some ReducerOf<TapToClaimButton> {
         Reduce { state, action in
             switch action {
             case .buttonTapped:
